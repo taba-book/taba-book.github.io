@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>קבצי הספר · תב״א</title>
+<title>קובצי הספר להורדה · תב״א</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap">
 <style>
 :root{--ink:#1A1A1A;--muted:#6B6B6B;--card:#F4F4F5;--line:#E7E7E7;--accent:#2A4F53}
@@ -24,37 +24,40 @@ td.path{direction:ltr;text-align:left;font-family:Consolas,'Courier New',monospa
 td.size{color:var(--muted);white-space:nowrap;font-size:14px}
 td.dl{text-align:left;white-space:nowrap}
 ul.chapters{list-style:none;margin:0;padding:0}
-ul.chapters li{border-bottom:1px solid var(--line);padding:11px 4px}
-ul.chapters a{color:var(--ink);text-decoration:none;font-weight:700}
-ul.chapters a:hover{color:var(--accent)}
-ul.chapters .t{color:var(--muted);margin-inline-start:8px}
+ul.chapters li{border-bottom:1px solid var(--line)}
+ul.chapters a{display:flex;align-items:baseline;gap:10px;padding:12px 10px;border-radius:8px;color:var(--ink);text-decoration:none}
+ul.chapters a:hover,ul.chapters a:focus-visible{background:var(--card)}
+ul.chapters .n{font-weight:700;min-width:2.6em}
+ul.chapters .t{color:var(--muted);flex:1}
+ul.chapters .go{color:var(--accent);font-weight:700}
+ul.chapters a:hover .t{color:var(--ink)}
 .note{margin-top:22px;color:var(--muted);font-size:14px}
 </style>
 </head>
 <body>
 <main>
 <p class="kick">ספר תב״א</p>
-<h1>קבצי הספר</h1>
-<p class="sub">לכל פרק תיקייה עם הקבצים שהספר מבקש להוריד.</p>
+<h1>קובצי הספר להורדה</h1>
+<p class="sub">בחרו את הפרק שאתם לומדים. בכל פרק תמצאו את הקבצים שהספר מבקש להוריד בו: תמונות, קוד לדפי האתר וקוד לבניית מסד הנתונים.</p>
 <ul class="chapters">
-<li><a href="1-5/files.html">1.5</a><span class="t">שילוב תמונות בדף</span></li>
-<li><a href="2-2/index.html">2.2</a><span class="t">קלט, פלט ומשתנים</span></li>
-<li><a href="2-4/index.html">2.4</a><span class="t">סביבון: switch, שארית ותזמון</span></li>
-<li><a href="2-5/index.html">2.5</a><span class="t">בלון מתפוצץ: שינוי תכונות והשהיה</span></li>
-<li><a href="2-6/index.html">2.6</a><span class="t">אירועים</span></li>
-<li><a href="2-7/index.html">2.7</a><span class="t">גלריית תמונות</span></li>
-<li><a href="2-8/index.html">2.8</a><span class="t">שעון מערכת</span></li>
-<li><a href="2-9/index.html">2.9</a><span class="t">תפריט סמלים</span></li>
-<li><a href="3-2/index.html">3.2</a><span class="t">תיבת טקסט</span></li>
-<li><a href="3-3/index.html">3.3</a><span class="t">בדיקות תקינות לשדות טקסט</span></li>
-<li><a href="3-5/index.html">3.5</a><span class="t">רשימה נגללת</span></li>
-<li><a href="3-6/index.html">3.6</a><span class="t">תיבות בחירה</span></li>
-<li><a href="3-7/index.html">3.7</a><span class="t">טקסט חופשי</span></li>
-<li><a href="3-8/index.html">3.8</a><span class="t">שדה סיסמה</span></li>
-<li><a href="3-9/index.html">3.9</a><span class="t">בדיקות תקינות מתקדמות: דואר אלקטרוני וסיסמה</span></li>
-<li><a href="3-10/index.html">3.10</a><span class="t">קבלת פרטי הטופס בצד השרת</span></li>
-<li><a href="4-1/index.html">4.1</a><span class="t">קובץ העזר Helper</span></li>
-<li><a href="4-2/index.html">4.2</a><span class="t">יצירת מסד הנתונים</span></li>
+<li><a href="1-5/files.html"><span class="n">1.5</span><span class="t">שילוב תמונות בדף</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="2-2/index.html"><span class="n">2.2</span><span class="t">קלט, פלט ומשתנים</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="2-4/index.html"><span class="n">2.4</span><span class="t">סביבון: switch, שארית ותזמון</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="2-5/index.html"><span class="n">2.5</span><span class="t">בלון מתפוצץ: שינוי תכונות והשהיה</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="2-6/index.html"><span class="n">2.6</span><span class="t">אירועים</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="2-7/index.html"><span class="n">2.7</span><span class="t">גלריית תמונות</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="2-8/index.html"><span class="n">2.8</span><span class="t">שעון מערכת</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="2-9/index.html"><span class="n">2.9</span><span class="t">תפריט סמלים</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="3-2/index.html"><span class="n">3.2</span><span class="t">תיבת טקסט</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="3-3/index.html"><span class="n">3.3</span><span class="t">בדיקות תקינות לשדות טקסט</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="3-5/index.html"><span class="n">3.5</span><span class="t">רשימה נגללת</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="3-6/index.html"><span class="n">3.6</span><span class="t">תיבות בחירה</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="3-7/index.html"><span class="n">3.7</span><span class="t">טקסט חופשי</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="3-8/index.html"><span class="n">3.8</span><span class="t">שדה סיסמה</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="3-9/index.html"><span class="n">3.9</span><span class="t">בדיקות תקינות מתקדמות: דואר אלקטרוני וסיסמה</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="3-10/index.html"><span class="n">3.10</span><span class="t">קבלת פרטי הטופס בצד השרת</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="4-1/index.html"><span class="n">4.1</span><span class="t">קובץ העזר Helper</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="4-2/index.html"><span class="n">4.2</span><span class="t">יצירת מסד הנתונים</span><span class="go" aria-hidden="true">‹</span></a></li>
 </ul>
 </main>
 </body>
