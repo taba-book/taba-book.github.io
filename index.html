@@ -5,42 +5,63 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>קובצי הספר להורדה · תב״א</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap">
 <style>
-:root{--ink:#1A1A1A;--muted:#6B6B6B;--card:#F4F4F5;--line:#E7E7E7;--accent:#2A4F53}
+:root{--ink:#1A1A1A;--muted:#5C6166;--faint:#8A8F94;--card:#F6F6F7;--line:#E4E5E7;--accent:#2A4F53;--accent-ink:#1E3B3E;--accent-soft:#E9F0F0;--accent-line:#CFDCDD}
 *{box-sizing:border-box}
-body{margin:0;background:#fff;color:var(--ink);font-family:'Assistant','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.5}
-main{max-width:760px;margin:0 auto;padding:40px 20px 64px}
-.kick{margin:0 0 6px;color:var(--muted);font-weight:700;font-size:13px;letter-spacing:1.5px}
-h1{margin:0 0 4px;font-size:30px;font-weight:700}
-.sub{margin:0 0 24px;color:var(--muted);font-size:17px}
-.btn{display:inline-block;padding:6px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:15px}
-.btn:hover{background:var(--ink)}
-.big{padding:12px 26px;font-size:17px;margin-bottom:24px}
-table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden}
-td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:middle}
-tr:last-child td{border-bottom:0}
-td.path{direction:ltr;text-align:left;font-family:Consolas,'Courier New',monospace;font-size:14.5px;word-break:break-all}
-td.size{color:var(--muted);white-space:nowrap;font-size:14px}
-td.dl{text-align:left;white-space:nowrap}
-ul.chapters{list-style:none;margin:0;padding:0}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Assistant','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:48px 20px 72px}
+.crumbs{margin:0 0 36px;font-size:15px;color:var(--muted)}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 12px}
+.crumbs li{display:flex;align-items:center;gap:12px}
+.crumbs li+li::before{content:"›";color:var(--faint);font-size:17px;line-height:1}
+.crumbs a{color:var(--accent);text-decoration:none;font-weight:600;padding:4px 0;border-bottom:1px solid transparent}
+.crumbs a:hover,.crumbs a:focus-visible{border-bottom-color:currentColor}
+.crumbs [aria-current]{color:var(--muted)}
+header{margin:0 0 40px}
+.brand{margin:0 0 14px;font-size:15px;font-weight:600;color:var(--muted)}
+h1{margin:0;font-size:32px;line-height:1.2;font-weight:700;letter-spacing:-.2px}
+h1 .num{color:var(--accent);margin-inline-end:.35em;font-variant-numeric:tabular-nums}
+.lead{margin:12px 0 0;font-size:17px;color:var(--muted);max-width:56ch}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:9px;text-decoration:none;font-weight:700;font-size:15px;white-space:nowrap}
+.btn svg{flex:none}
+.btn.dl{padding:7px 16px;background:var(--accent-soft);color:var(--accent-ink);border:1.5px solid var(--accent-line)}
+.btn.dl:hover,.btn.dl:focus-visible{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.ghost{padding:6px 14px;background:#fff;color:var(--accent);border:1.5px solid #C9D6D7}
+.btn.ghost:hover,.btn.ghost:focus-visible{background:var(--accent-soft);border-color:var(--accent)}
+.files{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.files ul{list-style:none;margin:0;padding:0}
+.files li{display:flex;align-items:center;gap:16px;padding:13px 20px;border-bottom:1px solid var(--line)}
+.files li:last-child{border-bottom:0}
+.files .name{flex:1;min-width:0;font-family:Consolas,'Courier New',monospace;font-size:15px;direction:ltr;text-align:right;unicode-bidi:isolate;overflow-wrap:anywhere}
+.files .size{color:var(--faint);font-size:14px;white-space:nowrap;direction:ltr;min-width:5.5em;text-align:left}
+.where{margin:24px 2px 0;font-size:14px;color:var(--muted)}
+.bundle{margin:20px 0 0;padding:16px 20px;border-radius:12px;background:var(--card);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.bundle p{margin:0;font-size:15px;color:var(--muted)}
+.bundle strong{display:block;color:var(--ink);font-weight:600;font-size:16px}
+.part{margin:36px 0 6px;font-size:15px;font-weight:600;color:var(--muted)}
+header+.part{margin-top:0}
+.part .pn{color:var(--accent);margin-inline-end:.4em}
+ul.chapters{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 ul.chapters li{border-bottom:1px solid var(--line)}
-ul.chapters a{display:flex;align-items:baseline;gap:10px;padding:12px 10px;border-radius:8px;color:var(--ink);text-decoration:none}
+ul.chapters a{display:flex;align-items:baseline;gap:14px;padding:13px 8px;color:var(--ink);text-decoration:none;border-radius:8px}
 ul.chapters a:hover,ul.chapters a:focus-visible{background:var(--card)}
-ul.chapters .n{font-weight:700;min-width:2.6em}
-ul.chapters .t{color:var(--muted);flex:1}
-ul.chapters .go{color:var(--accent);font-weight:700}
-ul.chapters a:hover .t{color:var(--ink)}
-.note{margin-top:22px;color:var(--muted);font-size:14px}
+ul.chapters .n{min-width:2.8em;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+ul.chapters .t{flex:1;font-size:17px}
+ul.chapters .go{color:var(--faint);font-size:18px;line-height:1}
+ul.chapters a:hover .go,ul.chapters a:focus-visible .go{color:var(--accent)}
+@media (max-width:560px){main{padding:32px 16px 56px}h1{font-size:27px}.files li{padding:12px 16px;gap:10px}.files .size{min-width:0}.bundle{flex-direction:column;align-items:stretch}.bundle .btn{justify-content:center}}
 </style>
 </head>
 <body>
 <main>
-<p class="kick">ספר תב״א</p>
-<h1>קובצי הספר להורדה</h1>
-<p class="sub">בחרו את הפרק שאתם לומדים. בכל פרק תמצאו את הקבצים שהספר מבקש להוריד בו: תמונות, קוד לדפי האתר וקוד לבניית מסד הנתונים.</p>
+<header><p class="brand">ספר תב״א</p><h1>קובצי הספר להורדה</h1><p class="lead">בחרו את הפרק שאתם לומדים. בכל פרק תמצאו את הקבצים שהספר מבקש להוריד בו: תמונות, קוד לדפי האתר וקוד לבניית מסד הנתונים.</p></header>
+<h2 class="part"><span class="pn">חלק 1</span>יסודות HTML ועיצוב CSS</h2>
 <ul class="chapters">
 <li><a href="1-5/files.html"><span class="n">1.5</span><span class="t">שילוב תמונות בדף</span><span class="go" aria-hidden="true">‹</span></a></li>
+</ul>
+<h2 class="part"><span class="pn">חלק 2</span>מבוא לשפת JavaScript</h2>
+<ul class="chapters">
 <li><a href="2-2/index.html"><span class="n">2.2</span><span class="t">קלט, פלט ומשתנים</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="2-4/index.html"><span class="n">2.4</span><span class="t">סביבון: switch, שארית ותזמון</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="2-5/index.html"><span class="n">2.5</span><span class="t">בלון מתפוצץ: שינוי תכונות והשהיה</span><span class="go" aria-hidden="true">‹</span></a></li>
@@ -48,6 +69,9 @@ ul.chapters a:hover .t{color:var(--ink)}
 <li><a href="2-7/index.html"><span class="n">2.7</span><span class="t">גלריית תמונות</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="2-8/index.html"><span class="n">2.8</span><span class="t">שעון מערכת</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="2-9/index.html"><span class="n">2.9</span><span class="t">תפריט סמלים</span><span class="go" aria-hidden="true">‹</span></a></li>
+</ul>
+<h2 class="part"><span class="pn">חלק 3</span>טופס הרשמה ובדיקות תקינות</h2>
+<ul class="chapters">
 <li><a href="3-2/index.html"><span class="n">3.2</span><span class="t">תיבת טקסט</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="3-3/index.html"><span class="n">3.3</span><span class="t">בדיקות תקינות לשדות טקסט</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="3-5/index.html"><span class="n">3.5</span><span class="t">רשימה נגללת</span><span class="go" aria-hidden="true">‹</span></a></li>
@@ -56,6 +80,9 @@ ul.chapters a:hover .t{color:var(--ink)}
 <li><a href="3-8/index.html"><span class="n">3.8</span><span class="t">שדה סיסמה</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="3-9/index.html"><span class="n">3.9</span><span class="t">בדיקות תקינות מתקדמות: דואר אלקטרוני וסיסמה</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="3-10/index.html"><span class="n">3.10</span><span class="t">קבלת פרטי הטופס בצד השרת</span><span class="go" aria-hidden="true">‹</span></a></li>
+</ul>
+<h2 class="part"><span class="pn">חלק 4</span>צד שרת: ASP.NET ומסד נתונים</h2>
+<ul class="chapters">
 <li><a href="4-1/index.html"><span class="n">4.1</span><span class="t">קובץ העזר Helper</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="4-2/index.html"><span class="n">4.2</span><span class="t">יצירת מסד הנתונים</span><span class="go" aria-hidden="true">‹</span></a></li>
 </ul>
