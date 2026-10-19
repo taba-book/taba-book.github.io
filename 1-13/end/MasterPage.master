@@ -1,0 +1,41 @@
+<%@ Master Language="C#"
+    CodeFile="MasterPage.master.cs"
+    Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head runat="server">
+  <title>הספרייה שלי</title>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700"
+        rel="stylesheet" />
+  <link href="css/StyleSheet.css" rel="stylesheet" />
+  <asp:ContentPlaceHolder id="head" runat="server" />
+</head>
+<body>
+  <table class="layout">
+    <tr>  <!-- כותרת עילית -->
+      <td class="header">
+        <img src="pics/header.jpg" style="width: 100%;" />
+      </td>
+    </tr>
+    <tr>  <!-- תפריט ראשי -->
+      <td class="nav">
+        <ul>
+          <li><a href="#">דף הבית</a></li>
+          <li><a href="#">ספרי מתח</a></li>
+          <li><a href="#">ספרי מדע</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>  <!-- כאן ייכנס התוכן של כל דף -->
+      <td class="main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1"
+            runat="server" />
+      </td>
+    </tr>
+    <tr>  <!-- כותרת תחתונה -->
+      <td class="footer"><h3>האתר נבנה על ידי משה</h3></td>
+    </tr>
+  </table>
+</body>
+</html>
