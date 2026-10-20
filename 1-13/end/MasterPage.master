@@ -20,11 +20,10 @@
     </tr>
     <tr>  <!-- תפריט ראשי -->
       <td class="nav">
-        <ul>
-          <li><a href="#">דף הבית</a></li>
-          <li><a href="#">ספרי מתח</a></li>
-          <li><a href="#">ספרי מדע</a></li>
-        </ul>
+        <a class="menu" href="Default.aspx">דף הבית</a>
+        <a class="menu" href="#">ספרי מתח</a>
+        <a class="menu" href="#">ספרי מדע</a>
+        <a class="menu" href="Schedule.aspx">מערכת שעות</a>
       </td>
     </tr>
     <tr>  <!-- כאן ייכנס התוכן של כל דף -->
