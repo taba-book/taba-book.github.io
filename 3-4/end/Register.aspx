@@ -1,4 +1,5 @@
-<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" CodeFile="Register.aspx.cs" Inherits="Register" %>
+<%@ Page Language="C#" MasterPageFile="~/MasterPage.master"
+    CodeFile="Register.aspx.cs" Inherits="Register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>

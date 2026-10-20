@@ -7,6 +7,7 @@ table.layout { width: 100%; max-width: 1000px;
           background-color: #f3e2a9; }
 .main   { width: 100%; height: 200px;
           background-color: #e3f6ce; }
-.footer { width: 100%; height: 50px;
-          text-align: center; }
+.footer { width: 100%; height: 35px;
+          text-align: center;
+          background-color: #2b5d62; color: white; }
 h1, h2, h3 { text-align: center; }

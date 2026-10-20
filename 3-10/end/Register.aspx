@@ -1,4 +1,5 @@
-<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" CodeFile="Register.aspx.cs" Inherits="Register" %>
+<%@ Page Language="C#" MasterPageFile="~/MasterPage.master"
+    CodeFile="Register.aspx.cs" Inherits="Register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
@@ -25,6 +26,7 @@
             border: 1px solid #999;
             padding: 2px 10px;
         }
+        form td { vertical-align: top; }
     </style>
     <script>
         function checkForm() {
@@ -245,6 +247,7 @@
                     <input type="checkbox" name="hobby" value="3" />טלוויזיה
                     <input type="checkbox" name="hobby" value="4" />ספורט
                     <input type="checkbox" name="hobby" value="5" />רשתות חברתיות
+                    <br />
                     <span id="mHobby" class="errMsg"></span>
                 </td>
             </tr>
