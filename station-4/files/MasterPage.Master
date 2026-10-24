@@ -1,0 +1,91 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.Master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="he" dir="rtl">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>בעלי החיים שלי</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700"
+          rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+
+    <!-- ----------- head place holder ---------- -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- ---------------------------------------- -->
+</head>
+<body>
+    <table class="mpTable">
+        <tr>
+            <!-- ------------------ שורת כותרת האתר -------------------- -->
+            <td class="header">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="mpLoginCell">
+                        </td>
+                        <td class="mpBannerCell">
+                            <table class="mpBanner" dir="ltr">
+                                <tr>
+                                    <td class="bannerCell">
+                                        <img src="pics/bannerLeft.jpg" width="240" height="120" alt="חיית באנר שמאלית" />
+                                    </td>
+                                    <td class="bannerCell mpBannerCenter">אתר בעלי החיים שלי</td>
+                                    <td class="bannerCell">
+                                        <img src="pics/bannerRight.jpg" width="240" height="120" alt="חיית באנר ימנית" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="mpClockCell" dir="ltr">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- ------------------------------------------------------- -->
+
+
+
+        <tr>
+            <!----------------------- שורת התפריט ---------------------- -->
+            <td class="nav">
+                <div class="mpMenuBar">
+                    <a href="Default.aspx" class="mpMenuBarBtn">דף הבית</a>
+                    <a href="Animals.aspx" class="mpMenuBarBtn">בעלי-חיים</a>
+                </div>
+            </td>
+        </tr>
+        <!-- ------------------------------------------------------- -->
+
+
+
+        <tr>
+            <!-- ------------------ התוכן הראשי של הדף ----------------- -->
+            <td class="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <!-- ------------------------------------------------------- -->
+
+
+
+        <tr>
+            <!-- ------------------ שורת הכותרת התחתית ----------------- -->
+            <td class="footer">
+                <table class="footerBox">
+                    <tr>
+                        <td>
+                            <a href="mailto:name@example.com">האתר נבנה ע"י משה אגו</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- ------------------------------------------------------- -->
+
+    </table>
+</body>
+</html>
