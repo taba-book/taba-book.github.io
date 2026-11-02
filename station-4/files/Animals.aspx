@@ -1,15 +1,15 @@
-<%@ Page Title="בעלי חיים" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="Animals.aspx.cs" Inherits="Animals" %>
+﻿<%@ Page Title="בעלי חיים" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="Animals.aspx.cs" Inherits="Animals" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <style>
         h1 {
-            color: #004d00;
+            color: #102A33;
             text-align: center;
         }
 
         h2, h4 {
-            color: #004d00;
+            color: #102A33;
         }
 
         a,
@@ -17,12 +17,12 @@
         a:visited,
         a:active {
             font-weight: bold;
-            color: #004d00;
+            color: #102A33;
         }
 
         p {
             font-size: 15pt;
-            color: #2B2B2B;
+            color: #1F3A44;
         }
 
         div {

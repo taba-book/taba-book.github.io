@@ -130,7 +130,7 @@
             else if (atSign != email.lastIndexOf('@'))
                 msg = 'סימן ה-@ מופיע בכתובת יותר מפעם אחת';
             else if (atSign == 0 || atSign == size - 1)
-                msg = 'סימן ה-@ לא יכול להופיע במקום הראשון או האחרון של הכתובת';
+                msg = 'ה-@ לא יכול להיות בהתחלה או בסוף הכתובת';
 
             //----- בדיקות הנקודה שאחרי ה-@ -----
             else if (dotSign == -1)
@@ -154,7 +154,7 @@
 
             //----- תווים אסורים -----
             else if (containsBadChars(email))
-                msg = 'לא ניתן להשתמש בתו רווח או בתווים  $%^&*()-![]{}<>?/ ';
+                msg = 'אסור רווח או אחד התווים $%^&*()-![]{}<>?/';
 
             return msg;
         }
@@ -223,6 +223,14 @@
                 <td>
                     <input type="radio" name="gender" value="זכר" checked />זכר
                     <input type="radio" name="gender" value="נקבה" />נקבה
+                </td>
+            </tr>
+            <tr>
+                <td>שנת לידה:</td>
+                <td>
+                    <select name="yearBorn">
+                        <%= yearOptions %>
+                    </select>
                 </td>
             </tr>
             <tr>

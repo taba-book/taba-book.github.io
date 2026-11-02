@@ -13,7 +13,7 @@ public partial class Login : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         // כתיבה לזיכרון האישי של הגולש
-        Session["user"] = "dana";
+        Session["uName"] = "dana";
         Session["city"] = "חיפה";
     }
 }

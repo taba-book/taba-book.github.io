@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.Master.cs" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.Master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -53,7 +53,7 @@
             <td class="nav">
                 <div class="mpMenuBar">
                     <a href="Default.aspx" class="mpMenuBarBtn">דף הבית</a>
-                    <a href="Animals.aspx" class="mpMenuBarBtn">בעלי-חיים</a>
+                    <a href="Animals.aspx" class="mpMenuBarBtn">בעלי חיים</a>
                 </div>
             </td>
         </tr>

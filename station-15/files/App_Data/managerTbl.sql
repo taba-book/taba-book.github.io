@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[managerTbl]
+(
+	[mName] NVARCHAR(10) NOT NULL PRIMARY KEY, 
+    [pw] NVARCHAR(10) NOT NULL
+)

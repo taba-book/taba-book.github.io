@@ -1,21 +1,13 @@
-<%@ Page Language="C#" AutoEventWireup="true"
-         CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<%@ Page Language="C#" MasterPageFile="~/MasterPage.master"
+    CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<!DOCTYPE html>
-
-<html lang="he" dir="rtl">
-<head runat="server">
-    <meta charset="utf-8" />
-    <title>דף הבית</title>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700"
-          rel="stylesheet" />
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
-        body { font-family: Assistant, Arial, sans-serif; }
-        table.list { border-collapse: collapse; margin: 0 auto; }
-        table.list th, table.list td { border: 1px solid gray; padding: 2px 8px; }
+        h1 { color: red; text-align: center; }
+        h2 { color: navy; }
     </style>
-</head>
-<body>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <%= st %>
-</body>
-</html>
+</asp:Content>

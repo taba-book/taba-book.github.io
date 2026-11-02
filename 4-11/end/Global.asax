@@ -12,7 +12,7 @@ void Application_Start(object sender, EventArgs e)
 void Session_Start(object sender, EventArgs e)
 {
     // רץ פעם אחת, כשגולש חדש נכנס לאתר
-    Session["user"] = "אורח";
+    Session["uName"] = "אורח";
 
     Application.Lock();
 

@@ -1,4 +1,4 @@
-html {
+﻿html {
     height: 100%;
 }
 
@@ -57,18 +57,19 @@ body {
 }
 
 .mpBanner {
-    width: 100%;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
 .bannerCell {
-    padding: 0;
+    padding: 0 5px;
     text-align: center;
 }
 
 .mpBannerCenter {
     width: 270px;
     height: 120px;
+    padding: 0;
     background-color: #4fae95;
     background-image: url('../pics/bannerCenter.jpg');
     background-repeat: no-repeat;
@@ -84,15 +85,13 @@ body {
 }
 
 .mpMenuBarBtn {
-    background-color: #e1ebc8;
-    font-weight: bold;
     color: #1F3A44;
     padding: 3px 6px;
-    text-decoration: none;
     margin: 5px;
 }
 
-/* כפתורי התפריט שומרים על הצבע שלהם בכל דף, גם בדף שמגדיר צבע לקישורים */
+/* כפתורי התפריט שומרים על הצבע ועל העובי שלהם בכל דף, גם בדף שמגדיר צבע או עובי לקישורים */
 .mpMenuBar .mpMenuBarBtn {
     color: #1F3A44;
+    font-weight: 500;
 }

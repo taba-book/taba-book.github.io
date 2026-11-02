@@ -1,19 +1,19 @@
-<%@ Page Title="עיט" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="Eagle.aspx.cs" Inherits="Eagle" %>
+﻿<%@ Page Title="עיט" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeFile="Eagle.aspx.cs" Inherits="Eagle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <style>
         h1 {
-            color: darkred;
+            color: #102A33;
             text-align: center;
         }
 
         h2 {
-            color: darkgreen;
+            color: #102A33;
         }
 
         p {
             font-size: 15pt;
-            color: navy;
+            color: #1F3A44;
         }
 
         img {

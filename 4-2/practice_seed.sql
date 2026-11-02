@@ -2,9 +2,8 @@
 -- מסד התרגול של הספר. הכרעות #69 · #153.
 --
 -- שייך ל"מתרגלים" בלבד. אינו מסד האתר, ואין לו שום קשר אליו.
--- מסד האתר, usersDB.mdf, נבנה בתיבת "בונים" של פרק 4.2, מתוך הקובץ usersTbl.sql.
 --
--- שלוש טבלאות: booksTbl (פרקים 4.2–4.8) · usersTbl ו-managerTbl (פרקים 4.12–4.17).
+-- שלוש טבלאות: booksTbl (פרקים 4.2 עד 4.8) · usersTbl ו-managerTbl (פרקים 4.12 עד 4.17).
 --
 -- הפעלה, פעם אחת בלבד:
 --   1. Add, New Item, SQL Server Database, בשם practiceDB.mdf, בתוך App_Data
@@ -43,7 +42,7 @@ INSERT INTO booksTbl (bCode, title, author, genre, pages, yearPub, inStock, adde
  (N'B1008', N'כוכבים מעל הנגב',  N'תמר אלון',  N'מדע בדיוני', 388, 2017, 1, '2023-08-29');
 GO
 
--- טבלת החברים של התרגול (פרקים 4.12–4.17). אינה טבלת האתר.
+-- טבלת החברים של התרגול (פרקים 4.12 עד 4.17). אינה טבלת האתר.
 CREATE TABLE usersTbl
 (
     uName      NVARCHAR(20) NOT NULL,

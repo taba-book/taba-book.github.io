@@ -27,5 +27,6 @@
     </form>
 
     <%= st %>
+    <h2 dir="ltr"><%= Helper.FixDirection(sql) %></h2>
 </body>
 </html>

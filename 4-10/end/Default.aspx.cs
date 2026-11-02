@@ -12,14 +12,14 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["user"] == null)
+        if (Session["uName"] == null)
         {
             st = "<h2>שלום אורח</h2>";
             st += "<p>כדי להיכנס למועדון עליכם להתחבר.</p>";
         }
         else
         {
-            string user = Session["user"].ToString();
+            string user = Session["uName"].ToString();
             st = $"<h2>שלום {user}, טוב לראות אותך שוב</h2>";
             st += "<p>אתם מחוברים כרגע למועדון.</p>";
         }

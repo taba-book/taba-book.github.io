@@ -18,7 +18,7 @@ public partial class Books : System.Web.UI.Page
         st = "<h1>הספרים בספרייה</h1>";
         st += "<table class='list'>";
         st += "<tr><th>קוד</th><th>שם הספר</th>";
-        st += "<th>מחבר</th><th>סוגה</th></tr>";
+        st += "<th>מחבר</th><th>סוג</th></tr>";
 
         for (int i = 0; i < table.Rows.Count; i++)
         {

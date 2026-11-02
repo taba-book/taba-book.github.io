@@ -23,6 +23,7 @@ public partial class LoginAdmin : System.Web.UI.Page
             if (Helper.IsExist("practiceDB.mdf", sql))
             {
                 Session["admin"] = "yes";
+                Session["userFName"] = "מנהל";
                 Response.Redirect("Default.aspx");
             }
             else

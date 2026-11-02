@@ -12,6 +12,9 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        int visits = (int)Application["visits"];
+        int online = (int)Application["online"];
+
         // בדף הבית: מציגים את ההודעה פעם אחת, ומרוקנים
         if (Session["homeMsg"].ToString() != "")
         {
@@ -25,6 +28,13 @@ public partial class _Default : System.Web.UI.Page
             st += "<p><a href='Manage.aspx'>ניהול החברים</a></p>";
         }
         else
-            st += $"<h2>שלום {Session["user"]}</h2>";
+            st += $"<h2>שלום {Session["userFName"]}</h2>";
+
+        if (Session["uName"].ToString() == "אורח" && Session["admin"].ToString() == "no")
+            st += "<p><a href='Login.aspx'>כניסה</a></p>";
+        else
+            st += "<p><a href='Logout.aspx'>יציאה</a></p>";
+        st += $"<p>ביקרו באתר עד כה {visits} גולשים.</p>";
+        st += $"<p>מחוברים כרגע: {online}.</p>";
     }
 }

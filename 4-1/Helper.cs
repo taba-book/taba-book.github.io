@@ -12,6 +12,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Web.Hosting;
+using System.Text.RegularExpressions;
 
 /// <summary>
 /// Summary description for Helper
@@ -78,7 +79,11 @@ public class Helper
         return dt;
     }
 
+    // מציגה שאילתה בדף בלי שעברית תתהפך:
+    // כל ערך שבין גרשיים עטוף ב-<bdi>
+    public static string FixDirection(string sql)
+    {
+        return Regex.Replace(sql, "'([^']*)'",
+            "'<bdi>$1</bdi>'");
+    }
 }
-
-
-

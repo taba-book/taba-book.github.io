@@ -1,0 +1,124 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    font-family: Assistant, Arial, sans-serif;
+    color: #1F3A44;
+    font-weight: 500;
+    background-color: #a0c49c;
+    height: 100%;
+    margin: 0;
+}
+
+.mpTable {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footerBox {
+    width: 100%;
+    height: 50px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+
+    .main h3 {
+        text-align: center;
+    }
+
+.mpClockCell {
+    width: 15%;
+    text-align: center;
+}
+
+.mpClock {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.mpLoginCell {
+    width: 15%;
+    text-align: center;
+}
+
+.mpBannerCell {
+    width: 70%;
+    padding: 6px 0;
+    vertical-align: middle;
+}
+
+.mpBanner {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.bannerCell {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.mpBannerImg {
+    vertical-align: middle;
+}
+
+.mpBannerCenter {
+    width: 270px;
+    height: 120px;
+    padding: 0;
+    background-color: #4fae95;
+    background-image: url('../pics/bannerCenter.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ------ עיצוב התפריט האופקי ------ */
+.mpMenuBar {
+    text-align: center;
+}
+
+/* מה ששני סוגי הכפתורים חולקים */
+.mpMenuBarBtn, .mpMenuSideBtn {
+    color: #1F3A44;
+    padding: 3px 6px;
+}
+
+.mpMenuBarBtn {
+    margin: 5px;
+}
+
+/* ------ עיצוב התפריט האנכי לפי סוג משתמש ------ */
+.mpMenuSide {
+    text-align: center;
+}
+
+.mpMenuSideBtn {
+    margin: 5px 0;
+}
+
+/* כפתורי התפריט שומרים על הצבע ועל העובי שלהם בכל דף, גם בדף שמגדיר צבע או עובי לקישורים */
+.mpMenuBar .mpMenuBarBtn, .mpMenuSide .mpMenuSideBtn {
+    color: #1F3A44;
+    font-weight: 500;
+}
