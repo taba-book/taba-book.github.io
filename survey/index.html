@@ -1,0 +1,606 @@
+<!doctype html>
+<!-- generated: mkpages324.py (prompt 324) -->
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>דף סקר עם גרף · העשרה</title>
+<meta name="description" content="דף סקר באתר שלכם: שאלה אחת מהנושא שלכם, וארבע תשובות. כל משתמש רשום מצביע פעם אחת, ומיד אחרי ההצבעה רואה את התוצאות של כל הגולשים, כגרף של עמודות צבעוניות. התשובה שבחר מסומנת, ואי אפשר להצביע שוב.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap">
+<style>
+:root{--ink:#1A1A1A;--muted:#5C6166;--faint:#8A8F94;--card:#F6F6F7;--line:#E4E5E7;--accent:#2A4F53;--accent-ink:#1E3B3E;--accent-soft:#E9F0F0;--accent-line:#CFDCDD}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Assistant','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:48px 20px 72px}
+.crumbs{margin:0 0 36px;font-size:15px;color:var(--muted)}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 12px}
+.crumbs li{display:flex;align-items:center;gap:12px}
+.crumbs li+li::before{content:"›";color:var(--faint);font-size:17px;line-height:1}
+.crumbs a{color:var(--accent);text-decoration:none;font-weight:600;padding:4px 0;border-bottom:1px solid transparent}
+.crumbs a:hover,.crumbs a:focus-visible{border-bottom-color:currentColor}
+.crumbs [aria-current]{color:var(--muted)}
+header{margin:0 0 40px}
+.brand{margin:0 0 14px;font-size:15px;font-weight:600;color:var(--muted)}
+h1{margin:0;font-size:32px;line-height:1.2;font-weight:700;letter-spacing:-.2px}
+h1 .num{color:var(--accent);margin-inline-end:.35em;font-variant-numeric:tabular-nums}
+.lead{margin:12px 0 0;font-size:17px;color:var(--muted);max-width:56ch}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:9px;text-decoration:none;font-weight:700;font-size:15px;white-space:nowrap}
+.btn svg{flex:none}
+.btn.dl{padding:7px 16px;background:var(--accent-soft);color:var(--accent-ink);border:1.5px solid var(--accent-line)}
+.btn.dl:hover,.btn.dl:focus-visible{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.ghost{padding:6px 14px;background:#fff;color:var(--accent);border:1.5px solid #C9D6D7}
+.btn.ghost:hover,.btn.ghost:focus-visible{background:var(--accent-soft);border-color:var(--accent)}
+.files{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.files ul{list-style:none;margin:0;padding:0}
+.files li{display:flex;align-items:center;gap:16px;padding:13px 20px;border-bottom:1px solid var(--line)}
+.files li:last-child{border-bottom:0}
+.files .name{flex:1;min-width:0;font-family:Consolas,'Courier New',monospace;font-size:15px;direction:ltr;text-align:right;unicode-bidi:isolate;overflow-wrap:anywhere}
+.files .size{color:var(--faint);font-size:14px;white-space:nowrap;direction:ltr;min-width:5.5em;text-align:left}
+.sv{display:block;margin-top:2px;font-family:'Assistant',sans-serif;font-size:12.5px;color:var(--faint);direction:rtl;unicode-bidi:isolate}.sv code{font-family:Consolas,'Courier New',monospace;direction:ltr;unicode-bidi:isolate}
+.endsec{margin-top:40px}.endsec h2{margin:0 0 6px;font-size:20px}.endsec .lead{margin:0 0 16px;font-size:15px}
+.where{margin:24px 2px 0;font-size:14px;color:var(--muted)}
+.bundle{margin:20px 0 0;padding:16px 20px;border-radius:12px;background:var(--card);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.bundle p{margin:0;font-size:15px;color:var(--muted)}
+.bundle strong{display:block;color:var(--ink);font-weight:600;font-size:16px}
+.part{margin:36px 0 6px;font-size:15px;font-weight:600;color:var(--muted)}
+header+.part{margin-top:0}
+.part .pn{color:var(--accent);margin-inline-end:.4em}
+ul.chapters{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+ul.chapters li{border-bottom:1px solid var(--line)}
+ul.chapters a{display:flex;align-items:baseline;gap:14px;padding:13px 8px;color:var(--ink);text-decoration:none;border-radius:8px}
+ul.chapters a:hover,ul.chapters a:focus-visible{background:var(--card)}
+ul.chapters .n{min-width:2.8em;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+ul.chapters .t{flex:1;font-size:17px}
+ul.chapters .go{color:var(--faint);font-size:18px;line-height:1}
+ul.chapters a:hover .go,ul.chapters a:focus-visible .go{color:var(--accent)}
+@media (max-width:560px){main{padding:32px 16px 56px}h1{font-size:27px}.files li{padding:12px 16px;gap:10px}.files .size{min-width:0}.bundle{flex-direction:column;align-items:stretch}.bundle .btn{justify-content:center}}
+article{margin:0}
+article h2{margin:46px 0 10px;font-size:23px;line-height:1.3;font-weight:700}
+article h2:first-of-type{margin-top:0}
+article p{margin:12px 0}
+article ul,article ol{margin:12px 0;padding-inline-start:1.5em}
+article li{margin:6px 0}
+article li::marker{color:var(--accent);font-weight:700}
+article strong{font-weight:700}
+code{font-family:Consolas,'Courier New',monospace;font-size:.92em;background:var(--card);border:1px solid var(--line);border-radius:5px;padding:0 5px;direction:ltr;unicode-bidi:isolate;overflow-wrap:anywhere}
+.box{margin:22px 0;padding:14px 18px;background:var(--accent-soft);border:1px solid var(--accent-line);border-inline-start:5px solid var(--accent);border-radius:10px}
+.box p{margin:0}
+figure.shot{margin:22px 0}
+figure.shot a{display:block;line-height:0}
+figure.shot img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px}
+.code{margin:16px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#FAFAFB}
+.code .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:40px;padding:5px 10px 5px 12px;background:var(--card);border-bottom:1px solid var(--line);font-size:14px;font-weight:600;color:var(--muted)}
+.code .copy{font:inherit;font-size:14px;font-weight:700;padding:4px 14px;border-radius:8px;background:#fff;color:var(--accent);border:1.5px solid #C9D6D7;cursor:pointer}
+.code .copy:hover,.code .copy:focus-visible{background:var(--accent-soft);border-color:var(--accent)}
+.code pre{margin:0;padding:14px 16px;overflow-x:auto;direction:ltr;text-align:left;font-family:Consolas,'Courier New',monospace;font-size:14px;line-height:1.55;tab-size:4;white-space:pre}
+.code pre code{font-size:inherit;background:none;border:0;padding:0;border-radius:0;direction:ltr;unicode-bidi:normal;overflow-wrap:normal}
+.tbl{margin:16px 0;overflow-x:auto}
+.tbl table{width:100%;border-collapse:collapse;font-size:15px}
+.tbl th,.tbl td{border:1px solid var(--line);padding:9px 12px;vertical-align:top;text-align:start}
+.tbl th{background:var(--card);font-weight:700}
+.tbl a.fl{color:var(--accent-ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--accent-line)}
+.tbl a.fl:hover,.tbl a.fl:focus-visible{border-bottom-color:currentColor}
+.back{margin:36px 0 0}
+.back .btn{padding:8px 18px}
+@media (max-width:560px){article h2{font-size:21px}.code pre{font-size:13px;padding:12px}.box{padding:12px 14px}}
+</style>
+</head>
+<body>
+<main>
+<nav class="crumbs" aria-label="מיקום באתר"><ol><li><a href="../">כל חומרי העזר</a></li><li><span aria-current="page">דף סקר עם גרף</span></li></ol></nav>
+<header><h1>דף סקר עם גרף</h1><p class="lead">העשרה, נספח ה (סעיף 6.6.2 בספר)</p></header>
+<article>
+<h2>מה בונים?</h2>
+<p>דף סקר באתר שלכם: שאלה אחת מהנושא שלכם, וארבע תשובות. כל משתמש רשום מצביע פעם אחת, ומיד אחרי ההצבעה רואה את התוצאות של כל הגולשים, כגרף של עמודות צבעוניות. התשובה שבחר מסומנת, ואי אפשר להצביע שוב.</p>
+<p>באתר המלווה: "איזה מבעלי החיים באתר הייתם בוחרים לראות מקרוב?", עם ארבע תשובות: אריה, עיט, לווייתן, פיל.</p>
+<figure class="shot"><a href="img/survey_before.png" target="_blank" rel="noopener"><img src="img/survey_before.png" width="986" height="548" alt="הדף לפני הצבעה: טבלת הבחירה וההודעה &quot;בחרו תשובה ולחצו על הצבעה&quot;" loading="lazy"></a></figure>
+<figure class="shot"><a href="img/survey_after.png" target="_blank" rel="noopener"><img src="img/survey_after.png" width="986" height="548" alt="הדף אחרי הצבעה: הבחירה נעולה ומסומנת, והגרף משמאל" loading="lazy"></a></figure>
+<aside class="box"><p><strong>לפני שמתחילים · שמרו עותק.</strong> הפיצ'ר הזה משנה גם את <code>Global.asax</code> ואת דף האב, שמשותפים לכל האתר. העתיקו את כל תיקיית האתר לתיקייה אחרת (למשל <code>MySite_before_survey</code>) לפני שאתם מתחילים.</p></aside>
+<h2>את כל זה כבר למדתם</h2>
+<ul>
+<li>דף תוכן חדש, וקישור בתפריט: תחנה 4, שלבים 5 ו-3</li>
+<li>התפריט לפי מי שמחובר (<code>menuBar</code>): תחנה 15</li>
+<li>כפתורי רדיו (<code>radio</code>), וקריאה שלהם בשרת עם <code>Request.Form</code>: פרקים 3.4 ו-3.10</li>
+<li>המגירה <code>Session</code>, וערכי ההתחלה ב-<code>Session_Start</code>: פרק 4.10</li>
+<li>המגירה <code>Application</code>, <code>Lock</code> ו-<code>UnLock</code>: פרק 4.11</li>
+<li><code>IsPostBack</code>: פרק 4.15, שלב 4</li>
+<li>הצגת מחרוזת מהשרת בדף, <code>&lt;%= … %&gt;</code>: סעיף 3.10.3</li>
+<li><code>switch</code>, מערכים ולולאת <code>for</code>: "יסודות מדעי המחשב"</li>
+</ul>
+<p><strong>ומה חדש כאן:</strong> איך מחשבים אחוזים בלי לאבד אותם בחילוק, ואיך הופכים אחוז לעמודה בגרף.</p>
+<h2>שלב 1 · המונים: ארבע מגירות לכל האתר, ושתיים לכל גולש</h2>
+<p>כל תשובה צריכה מונה משלה, שכל הגולשים מוסיפים לו. זה בדיוק התפקיד של <code>Application</code>. ובנוסף, כל גולש צריך לזכור אם הוא כבר הצביע, ובמה בחר. זה התפקיד של <code>Session</code>.</p>
+<p><strong>בקובץ <code>Global.asax</code>, בתוך <code>Application_Start</code>,</strong> אחרי המונים שכבר יש שם:</p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>Application["q1"] = 0;       // מונה הצבעות לתשובות א-ד
+Application["q2"] = 0;
+Application["q3"] = 0;
+Application["q4"] = 0;</code></pre></div>
+<p><strong>ובתוך <code>Session_Start</code>,</strong> אחרי שאר ערכי ההתחלה:</p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>Session["voted"] = false;
+Session["myAnswer"] = "";</code></pre></div>
+<p><code>voted</code> אומר אם הגולש הזה כבר הצביע. <code>myAnswer</code> שומר את התשובה שבחר, כדי לסמן אותה גם אם הוא חוזר לדף.</p>
+<aside class="box"><p><strong>שימו לב · המונים מתאפסים.</strong> <code>Application</code> נשמר רק כל עוד האתר רץ. כשעוצרים את האתר ב-Visual Studio ומריצים שוב, כל הקולות מתאפסים. בסקר אמיתי היו שומרים את הקולות בטבלה במסד הנתונים. כאן, כדי לראות שהכול עובד, זה מספיק.</p></aside>
+<h2>שלב 2 · הדף והתפריט</h2>
+<ol>
+<li><strong>דף תוכן חדש,</strong> כמו בתחנה 4, שלב 5. באתר המלווה: <code>Survey.aspx</code>, וב-<code>Title</code>: "סקר".</li>
+<li><strong>קישור בתפריט, רק למשתמשים רשומים ולמנהל</strong> (בתחנה 15 בנינו את התפריט לפי מי שמחובר). <strong>בקובץ <code>MasterPage.Master.cs</code>,</strong> בענף של המנהל ובענף של המשתמש הרגיל, לפני הסגירה:</li>
+</ol>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>menuBar += "&lt;a href='Survey.aspx' class='mpMenuBarBtn'&gt;סקר&lt;/a&gt;";</code></pre></div>
+<p><strong>בניתם את התפריט הנפתח?</strong> אז אצלכם כל כפתור בתוך <code>&lt;li&gt;</code>:</p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>menuBar += "&lt;li&gt;&lt;a href='Survey.aspx'"
+    + " class='mpMenuBarBtn'&gt;סקר&lt;/a&gt;&lt;/li&gt;";</code></pre></div>
+<p><strong>התאמה לאתר שלכם:</strong> שם הדף והכיתוב בכפתור, לפי הנושא שלכם.</p>
+<h2>שלב 3 · טבלת הבחירה</h2>
+<p><strong>בקובץ <code>Survey.aspx</code>, באזור התוכן.</strong> טבלה אחת שמחזיקה שני תאים זה ליד זה: מימין טבלת הבחירה, ומשמאל מקום לגרף. מתחת: מקום להודעה.</p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>&lt;form runat="server"&gt;
+    &lt;table class="layoutTable"&gt;
+        &lt;tr&gt;
+            &lt;td class="rightCell"&gt;
+                &lt;table class="surveyTable &lt;%= lockClass %&gt;"&gt;
+                    &lt;tr&gt;
+                        &lt;th colspan="2"&gt;איזה מבעלי החיים באתר הייתם בוחרים לראות מקרוב?&lt;/th&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr &lt;%= rowAttr[0] %&gt;&gt;
+                        &lt;td class="optionText"&gt;&lt;span class="optLetter"&gt;א&lt;/span&gt; · אריה&lt;/td&gt;
+                        &lt;td class="radioCell"&gt;
+                            &lt;input type="radio" name="surveyAnswer" value="1" &lt;%= checkAttr[0] %&gt; &lt;%= lockAttr %&gt; /&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr &lt;%= rowAttr[1] %&gt;&gt;
+                        &lt;td class="optionText"&gt;&lt;span class="optLetter"&gt;ב&lt;/span&gt; · עיט&lt;/td&gt;
+                        &lt;td class="radioCell"&gt;
+                            &lt;input type="radio" name="surveyAnswer" value="2" &lt;%= checkAttr[1] %&gt; &lt;%= lockAttr %&gt; /&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr &lt;%= rowAttr[2] %&gt;&gt;
+                        &lt;td class="optionText"&gt;&lt;span class="optLetter"&gt;ג&lt;/span&gt; · לווייתן&lt;/td&gt;
+                        &lt;td class="radioCell"&gt;
+                            &lt;input type="radio" name="surveyAnswer" value="3" &lt;%= checkAttr[2] %&gt; &lt;%= lockAttr %&gt; /&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr &lt;%= rowAttr[3] %&gt;&gt;
+                        &lt;td class="optionText"&gt;&lt;span class="optLetter"&gt;ד&lt;/span&gt; · פיל&lt;/td&gt;
+                        &lt;td class="radioCell"&gt;
+                            &lt;input type="radio" name="surveyAnswer" value="4" &lt;%= checkAttr[3] %&gt; &lt;%= lockAttr %&gt; /&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr&gt;
+                        &lt;td colspan="2" class="buttonCell"&gt;
+                            &lt;input type="submit" name="submit" value="הצבעה" &lt;%= lockAttr %&gt; /&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;td class="leftCell"&gt;
+                &lt;%= survey %&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;%= surveyMsg %&gt;
+
+&lt;/form&gt;</code></pre></div>
+<ul>
+<li><strong>ארבעת כפתורי הרדיו</strong> באותו <code>name</code>, <code>surveyAnswer</code>, ולכן אפשר לבחור רק אחד. ה-<code>value</code> של כל אחד הוא מספר התשובה, 1 עד 4. זה מה שיגיע לשרת.</li>
+<li><strong>החלקים <code>&lt;%= … %&gt;</code> בתוך התגיות</strong> (<code>lockClass</code>, <code>rowAttr</code>, <code>checkAttr</code>, <code>lockAttr</code>) ריקים בהתחלה. אחרי ההצבעה השרת ימלא אותם, וכך ינעל את הטבלה ויסמן את הבחירה (שלב 6).</li>
+</ul>
+<p><strong>העיצוב:</strong> <strong>ב-<code>Survey.aspx</code>, באזור <code>head</code>,</strong> בלוק <code>style</code> של הדף. הוא ארוך, ולכן הוא כאן בשלמותו, להעתקה:</p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>&lt;style&gt;
+    .layoutTable {
+        width: fit-content;
+        margin: 40px auto;
+    }
+
+
+    .leftCell {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .rightCell {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .surveyTable {
+        width: 220px;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #999;
+    }
+
+    .graphTable {
+        width: 620px;
+        margin: 0 15px 0 0;
+        text-align: center;
+        border: 1px solid #999;
+    }
+
+
+        .surveyTable th,
+        .surveyTable td,
+        .graphTable td {
+            text-align: center;
+            vertical-align: middle;
+            height: 31px;
+            padding: 0;
+            border: 1px solid #999;
+        }
+
+    .fixedRow {
+        height: 30px;
+    }
+
+    .optionText {
+        width: 150px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .optLetter {
+        font-weight: bold;
+    }
+
+    .surveyLocked td.optionText {
+        color: #8a9aa0;
+    }
+
+        .surveyLocked tr.rowChosen td {
+            background-color: #e1ebc8;
+        }
+
+        .surveyLocked tr.rowChosen td.optionText {
+            color: #1F3A44;
+            font-weight: bold;
+        }
+
+    .radioCell {
+        width: 50px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .buttonCell {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .graphTitle {
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .surveyTable th,
+    .graphTable td.graphTitle {
+        height: 36px;
+    }
+
+    .graphSummary {
+        direction: rtl;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .sumLetter {
+        font-weight: bold;
+    }
+
+    .letterCell {
+        width: 30px;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+
+    .graphTable td.barCell {
+        width: 570px;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    .barBox {
+        width: 100%;
+        height: 28px;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .barText {
+        display: inline-block;
+        height: 28px;
+        line-height: 28px;
+        vertical-align: middle;
+        margin-left: 6px;
+    }
+
+    .barFillRed,
+    .barFillYellow,
+    .barFillGreen,
+    .barFillBlue {
+        height: 28px;
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+    }
+
+    .barFillRed {
+        background-color: red;
+    }
+
+    .barFillYellow {
+        background-color: yellow;
+    }
+
+    .barFillGreen {
+        background-color: green;
+    }
+
+    .barFillBlue {
+        background-color: blue;
+    }
+
+&lt;/style&gt;</code></pre></div>
+<p>העיקר בו:</p>
+<ul>
+<li><strong><code>.surveyTable</code> ו-<code>.graphTable</code>:</strong> שתי הטבלאות, עם מסגרת.</li>
+<li><strong><code>.surveyLocked</code>:</strong> אחרי ההצבעה, הטקסט של התשובות אפור, <strong>ו-<code>.rowChosen</code></strong> מדגיש את השורה שנבחרה, ברקע של צבעי האתר.</li>
+<li><strong><code>.barFillRed</code>, <code>.barFillYellow</code>, <code>.barFillGreen</code>, <code>.barFillBlue</code>:</strong> ארבע העמודות. כל עמודה היא <code>div</code> בגובה קבוע, ורוחבה ייקבע בשרת.</li>
+</ul>
+<p><strong>התאמה לאתר שלכם:</strong> השאלה וארבע התשובות מהנושא שלכם. את המספרים ב-<code>value</code> לא משנים. צבעי העמודות: אפשר את צבעי האתר שלכם, ובלבד שארבעתם שונים זה מזה.</p>
+<p><strong>בדיקה:</strong> הריצו כמשתמש רשום. הטבלה מופיעה, ואפשר לבחור תשובה אחת. הכפתור עוד לא עושה כלום.</p>
+<h2>שלב 4 · ההצבעה</h2>
+<p><strong>בקובץ <code>Survey.aspx.cs</code>.</strong> קודם המשתנים של הדף, מעל <code>Page_Load</code>:</p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>public string summary = "";
+public string survey = "";
+public string surveyMsg = "";
+
+// --- תוספות שהדף מזריק לטבלת הבחירה אחרי הצבעה ---
+public string lockClass = "";              // surveyLocked
+public string lockAttr = "";               // disabled
+public string[] checkAttr = new string[4]; // checked לאפשרות שנבחרה
+public string[] rowAttr = new string[4];   // class לשורה שנבחרה</code></pre></div>
+<p><strong>ו-<code>Page_Load</code>:</strong></p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>protected void Page_Load(object sender, EventArgs e)
+{
+    if (Session["uName"].ToString() == "אורח")
+    {
+        surveyMsg = "&lt;div class='messageBox'&gt;על מנת להצביע בסקר יש להתחבר לאתר&lt;/div&gt;";
+        return;
+    }
+
+    if (!(bool)Session["voted"])
+    {
+        if (!IsPostBack)
+        {
+            surveyMsg = "&lt;div class='messageBox'&gt;בחרו תשובה ולחצו על הצבעה&lt;/div&gt;";
+            return;
+        }
+
+        string ans = Request.Form["surveyAnswer"];
+
+        if (ans == null)
+        {
+            surveyMsg = "&lt;div class='messageBox'&gt;לא נבחרה תשובה&lt;/div&gt;";
+            return;
+        }
+
+        Session["voted"] = true;
+        Session["myAnswer"] = ans;
+
+        Application.Lock();
+        switch (ans)
+        {
+            case "1":
+                Application["q1"] = (int)Application["q1"] + 1;
+                break;
+            case "2":
+                Application["q2"] = (int)Application["q2"] + 1;
+                break;
+            case "3":
+                Application["q3"] = (int)Application["q3"] + 1;
+                break;
+            case "4":
+                Application["q4"] = (int)Application["q4"] + 1;
+                break;
+        }
+        Application.UnLock();
+    }
+
+    // --- מכאן ואילך הגולש הצביע, ואין הבדל בין הצבעה חדשה לישנה ---
+    BuildGraph();
+    LockOptions();
+}</code></pre></div>
+<p><strong>נעבור על זה לפי הסדר:</strong></p>
+<ul>
+<li><strong>אורח:</strong> מקבל הודעה, ו-<code>return</code> עוצר את הדף. הוא לא מצביע ולא רואה תוצאות.</li>
+<li><strong><code>(bool)Session["voted"]</code>:</strong> המגירה שומרת <code>object</code>, ולכן ממירים ל-<code>bool</code> (כמו <code>(int)</code> במונים של 4.11).</li>
+<li><strong><code>IsPostBack</code>:</strong> <code>false</code> כשנכנסים לדף מהתפריט, <code>true</code> כשלחצו על הכפתור בדף. בכניסה הראשונה: רק הודעה.</li>
+<li><strong><code>ans == null</code>:</strong> לחצו על הכפתור בלי לבחור. כפתור רדיו שלא נבחר לא נשלח בכלל, ולכן <code>Request.Form</code> מחזיר <code>null</code>, לא מחרוזת ריקה.</li>
+<li><strong><code>Lock</code> ו-<code>UnLock</code>:</strong> כמו בפרק 4.11. <code>Application</code> משותף לכל הגולשים. אם שני גולשים מצביעים באותו רגע בלי נעילה, שניהם עלולים לקרוא את אותו מספר, וקול אחד הולך לאיבוד.</li>
+<li><strong>בסוף:</strong> גם מי שהצביע עכשיו וגם מי שהצביע קודם וחזר לדף מגיעים לאותן שתי שורות: בונים את הגרף ונועלים את הבחירה.</li>
+</ul>
+<h2>שלב 5 · מאחוזים לגרף</h2>
+<p><strong>בקובץ <code>Survey.aspx.cs</code>, פעולה חדשה,</strong> מתחת ל-<code>Page_Load</code>. נבנה אותה בשלושה חלקים.</p>
+<p><strong>חלק א · כמה קולות לכל תשובה, ובאחוזים:</strong></p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>// --- בניית טבלת התוצאות מתוך המונים ---
+private void BuildGraph()
+{
+    // --- העברת סך הקולות של אפשרות למערך ---
+    int[] sumVotes = new int[4];
+
+    sumVotes[0] = (int)Application["q1"];
+    sumVotes[1] = (int)Application["q2"];
+    sumVotes[2] = (int)Application["q3"];
+    sumVotes[3] = (int)Application["q4"];
+
+    // --- בניית מערך אחוזים לכל אפשרות ---
+    int totalVotes = sumVotes[0] + sumVotes[1] + sumVotes[2] + sumVotes[3];
+
+    int[] percents = new int[4];
+
+    if (totalVotes &gt; 0)
+    {
+        // מחשבים 3 ראשונים רגיל
+        percents[0] = sumVotes[0] * 100 / totalVotes;
+        percents[1] = sumVotes[1] * 100 / totalVotes;
+        percents[2] = sumVotes[2] * 100 / totalVotes;
+
+        // האחרון = השלמה ל-100%
+        percents[3] = 100 - (percents[0] + percents[1] + percents[2]);
+    }
+
+    // אפשרות בלי קולות: אפס אחוזים, ולכן גם בלי פס
+    for (int i = 0; i &lt; percents.Length; i++)
+        if (sumVotes[i] == 0)
+            percents[i] = 0;</code></pre></div>
+<ul>
+<li><strong>כופלים ב-100 לפני שמחלקים.</strong> <code>3 / 7</code> במספרים שלמים יוצא 0, ואז גם כפול 100 יוצא 0. <code>3 * 100 / 7</code> יוצא 42.</li>
+<li><strong>למה האחרון הוא "השלמה ל-100"?</strong> בחילוק של שלמים נחתך החלק העשרוני, ולכן ארבעה אחוזים מחושבים עלולים להסתכם ב-99. כך הסכום תמיד 100.</li>
+<li><strong>ולמה הלולאה בסוף?</strong> בגלל ההשלמה, תשובה בלי אף קול עלולה לקבל אחוז אחד. הלולאה מוודאת: אפס קולות, אפס אחוזים.</li>
+</ul>
+<p><strong>חלק ב · שורת הסיכום, ורוחב לכל עמודה:</strong></p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>    // --- לבדיקת נכונות בזמן תכנות נציג בערכים מוחלטים ---
+    summary = $"&lt;span class='sumLetter'&gt;א&lt;/span&gt; = {sumVotes[0]}";
+    summary += $" | &lt;span class='sumLetter'&gt;ב&lt;/span&gt; = {sumVotes[1]}";
+    summary += $" | &lt;span class='sumLetter'&gt;ג&lt;/span&gt; = {sumVotes[2]}";
+    summary += $" | &lt;span class='sumLetter'&gt;ד&lt;/span&gt; = {sumVotes[3]}";
+
+    // --- קביעת גודל הגרף לכל אפשרות: כל אחוז = 5 פיקסלים, ולכן 100% = 500px ---
+    int scale = 5;
+    double[] barWidths = new double[4];
+    for (int i = 0; i &lt; barWidths.Length; i++)
+        barWidths[i] = percents[i] * scale;</code></pre></div>
+<p><strong>מאחוז לעמודה:</strong> כל אחוז הוא 5 פיקסלים. 40% הופך לעמודה ברוחב 200 פיקסלים, ו-100% ל-500.</p>
+<p><strong>חלק ג · הטבלה של הגרף:</strong> שורת כותרת, ארבע שורות של עמודות, ושורת הסיכום. כל שורה של עמודה: בתא אחד המספר והעמודה, ובתא השני האות.</p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>    // --- בניית הגרף ---
+    survey = "&lt;table class='graphTable' dir='ltr'&gt;";
+
+    survey += "&lt;tr class='fixedRow'&gt;";
+    survey += "&lt;td colspan='2' class='graphTitle'&gt;תוצאות הסקר&lt;/td&gt;";
+    survey += "&lt;/tr&gt;";
+
+    survey += "&lt;tr class='fixedRow'&gt;";
+    survey += "&lt;td class='barCell'&gt;&lt;div class='barBox'&gt;";
+    survey += $"&lt;span class='barText'&gt;{percents[0]}% &amp;nbsp;&lt;/span&gt;";
+    survey += $"&lt;div class='barFillRed' style='width:{barWidths[0]}px;'&gt;&lt;/div&gt;";
+    survey += "&lt;/div&gt;&lt;/td&gt;";
+    survey += "&lt;td class='letterCell'&gt;א&lt;/td&gt;";
+    survey += "&lt;/tr&gt;";
+
+    survey += "&lt;tr class='fixedRow'&gt;";
+    survey += "&lt;td class='barCell'&gt;&lt;div class='barBox'&gt;";
+    survey += $"&lt;span class='barText'&gt;{percents[1]}% &amp;nbsp;&lt;/span&gt;";
+    survey += $"&lt;div class='barFillYellow' style='width:{barWidths[1]}px;'&gt;&lt;/div&gt;";
+    survey += "&lt;/div&gt;&lt;/td&gt;";
+    survey += "&lt;td class='letterCell'&gt;ב&lt;/td&gt;";
+    survey += "&lt;/tr&gt;";
+
+    survey += "&lt;tr class='fixedRow'&gt;";
+    survey += "&lt;td class='barCell'&gt;&lt;div class='barBox'&gt;";
+    survey += $"&lt;span class='barText'&gt;{percents[2]}% &amp;nbsp;&lt;/span&gt;";
+    survey += $"&lt;div class='barFillGreen' style='width:{barWidths[2]}px;'&gt;&lt;/div&gt;";
+    survey += "&lt;/div&gt;&lt;/td&gt;";
+    survey += "&lt;td class='letterCell'&gt;ג&lt;/td&gt;";
+    survey += "&lt;/tr&gt;";
+
+    survey += "&lt;tr class='fixedRow'&gt;";
+    survey += "&lt;td class='barCell'&gt;&lt;div class='barBox'&gt;";
+    survey += $"&lt;span class='barText'&gt;{percents[3]}% &amp;nbsp;&lt;/span&gt;";
+    survey += $"&lt;div class='barFillBlue' style='width:{barWidths[3]}px;'&gt;&lt;/div&gt;";
+    survey += "&lt;/div&gt;&lt;/td&gt;";
+    survey += "&lt;td class='letterCell'&gt;ד&lt;/td&gt;";
+    survey += "&lt;/tr&gt;";
+
+    survey += "&lt;tr class='fixedRow'&gt;";
+    survey += $"&lt;td colspan='2' class='graphSummary'&gt;{summary}&lt;/td&gt;";
+    survey += "&lt;/tr&gt;";
+
+    survey += "&lt;/table&gt;";
+}</code></pre></div>
+<ul>
+<li><strong><code>style='width:…px;'</code>:</strong> כאן הרוחב שחושב בחלק ב נכנס לעמודה. זו הפעם הראשונה שהשרת כותב ערך של CSS, ולא רק טקסט.</li>
+<li><strong><code>dir='ltr'</code>:</strong> העמודות גדלות משמאל לימין, כמו בגרף רגיל, והאותיות בצד ימין.</li>
+</ul>
+<p><strong>בדיקה:</strong> הריצו, הצביעו. הגרף מופיע משמאל, עם עמודה אחת של 100%. התחברו כמשתמש אחר (או מדפדפן אחר), והצביעו לתשובה אחרת: עכשיו שתי עמודות של 50%.</p>
+<h2>שלב 6 · נועלים את הבחירה</h2>
+<p><strong>בקובץ <code>Survey.aspx.cs</code>, פעולה אחרונה:</strong></p>
+<div class="code"><div class="bar"><span></span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>// --- נעילת טבלת הבחירה, וההודעה המסכמת ---
+private void LockOptions()
+{
+    string[] letters = { "א", "ב", "ג", "ד" };
+    string[] animals = { "אריה", "עיט", "לווייתן", "פיל" };
+
+    int chosen = int.Parse(Session["myAnswer"].ToString()) - 1;
+
+    lockClass = "surveyLocked";
+    lockAttr = "disabled";
+
+    for (int i = 0; i &lt; 4; i++)
+    {
+        checkAttr[i] = "";
+        rowAttr[i] = "";
+    }
+
+    checkAttr[chosen] = "checked";
+    rowAttr[chosen] = "class='rowChosen'";
+
+    surveyMsg = "&lt;div class='messageBox'&gt;";
+    surveyMsg += $"בחרתם באפשרות {letters[chosen]} ({animals[chosen]}).";
+    surveyMsg += "&lt;br /&gt;ההצבעה שלכם נספרה ומופיעה בתוצאות שמשמאל.";
+    surveyMsg += "&lt;br /&gt;אפשר להצביע פעם אחת בלבד. תודה רבה!";
+    surveyMsg += "&lt;/div&gt;";
+}</code></pre></div>
+<ul>
+<li><strong><code>chosen</code>:</strong> התשובה נשמרה כ-"1" עד "4", והמערכים מתחילים ב-0, ולכן מחסירים 1.</li>
+<li><strong><code>disabled</code>:</strong> כפתורי הרדיו והכפתור "הצבעה" נעשים אפורים, ואי אפשר ללחוץ עליהם.</li>
+<li><strong><code>checked</code> ו-<code>rowChosen</code>:</strong> התשובה שבחרתם מסומנת, והשורה שלה מודגשת. גם אם יוצאים מהדף וחוזרים, כי <code>myAnswer</code> שמור ב-<code>Session</code>.</li>
+</ul>
+<p><strong>התאמה לאתר שלכם:</strong> ב-<code>animals</code>, ארבע התשובות שלכם, באותו סדר כמו בטבלה.</p>
+<h2>שלב 7 · בודקים</h2>
+<ol>
+<li><strong>כאורח:</strong> אין כפתור "סקר" בתפריט. אם מקלידים את שם הדף: ההודעה "על מנת להצביע בסקר יש להתחבר לאתר", בלי טבלה ובלי גרף.</li>
+<li><strong>כמשתמש רשום, כניסה ראשונה:</strong> הטבלה וההודעה "בחרו תשובה ולחצו על הצבעה". אין גרף.</li>
+<li><strong>לחיצה על "הצבעה" בלי לבחור:</strong> "לא נבחרה תשובה".</li>
+<li><strong>בחירה והצבעה:</strong> הגרף מופיע, הבחירה מסומנת ונעולה, וההודעה אומרת במה בחרתם.</li>
+<li><strong>יוצאים מהדף וחוזרים:</strong> עדיין נעול, עם אותה בחירה, ואי אפשר להצביע שוב.</li>
+<li><strong>משתמש שני מצביע:</strong> האחוזים מתעדכנים, וסכומם 100.</li>
+<li><strong>תשובה בלי אף קול:</strong> 0%, ובלי עמודה.</li>
+<li><strong>שורת הסיכום</strong> (בתחתית הגרף) מראה את מספר הקולות האמיתי לכל תשובה.</li>
+</ol>
+<h2>כשמשהו לא עובד</h2>
+<div class="tbl"><table>
+<thead><tr><th>מה רואים</th><th>הסיבה</th><th>התיקון</th></tr></thead>
+<tbody>
+<tr><td>שגיאה על <code>Session["voted"]</code> או על <code>Application["q1"]</code></td><td>הערך לא הוגדר ב-<code>Global.asax</code>, או שהאתר לא הופעל מחדש אחרי השינוי</td><td>שלב 1. ואחר כך עצרו את האתר והריצו שוב</td></tr>
+<tr><td>אפשר לבחור כמה תשובות יחד</td><td>ה-<code>name</code> של כפתורי הרדיו לא זהה בארבעתם</td><td>כולם <code>surveyAnswer</code></td></tr>
+<tr><td>כל האחוזים 0</td><td>חילקתם לפני שכפלתם ב-100</td><td><code>sumVotes[i] * 100 / totalVotes</code></td></tr>
+<tr><td>העמודות לא מופיעות, אבל המספרים כן</td><td>שם המחלקה ב-C# לא זהה לשם ב-<code>style</code> (למשל <code>barFillred</code>)</td><td>השמות רגישים לאותיות גדולות וקטנות</td></tr>
+<tr><td>אחרי הצבעה אפשר להצביע שוב</td><td><code>Session["voted"] = true</code> חסר, או נמצא אחרי <code>return</code></td><td>שלב 4</td></tr>
+<tr><td>הכפתור "סקר" לא בתפריט</td><td>הוספתם אותו בענף אחד בלבד</td><td>בענף של המנהל ובענף של המשתמש הרגיל</td></tr>
+<tr><td>הקולות נעלמו</td><td>עצרתם את האתר והרצתם שוב</td><td>זה צפוי: <code>Application</code> מתאפס (שלב 1)</td></tr>
+</tbody>
+</table></div>
+<h2>הקבצים להשוואה</h2>
+<p><strong>להשוואה בלבד.</strong> הקבצים של האתר המלווה, "בעלי החיים שלי", אחרי הפיצ'ר.</p>
+<div class="tbl"><table>
+<thead><tr><th>הקובץ</th><th>מה יש בו</th></tr></thead>
+<tbody>
+<tr><td><a class="fl" href="files/survey_end_Survey.aspx" download><code>survey_end_Survey.aspx</code></a></td><td>טבלת הבחירה ובלוק העיצוב (שלב 3)</td></tr>
+<tr><td><a class="fl" href="files/survey_end_Survey.aspx.cs" download><code>survey_end_Survey.aspx.cs</code></a></td><td>ההצבעה, האחוזים, הגרף והנעילה (שלבים 4 עד 6)</td></tr>
+<tr><td><a class="fl" href="files/survey_end_Global.asax" download><code>survey_end_Global.asax</code></a></td><td>המונים וערכי ההתחלה (שלב 1)</td></tr>
+<tr><td><a class="fl" href="files/survey_end_MasterPage.Master.cs" download><code>survey_end_MasterPage.Master.cs</code></a></td><td>הכפתור "סקר" בתפריט (שלב 2)</td></tr>
+</tbody>
+</table></div>
+<p><strong>שימו לב:</strong> בקבצים של דף האב ושל <code>Global.asax</code> יש גם את מה ששני הפיצ'רים האחרים מוסיפים (התפריט הנפתח, "בול פגיעה"). אצלכם הם יופיעו רק אם בניתם אותם.</p>
+<p class="back"><a class="btn ghost" href="../">חזרה לכל חומרי העזר</a></p>
+</article>
+<script>document.querySelectorAll(".code").forEach(function(c){var b=c.querySelector(".copy");if(!b)return;b.addEventListener("click",function(){var t=c.querySelector("code").textContent;function done(){b.textContent="הועתק";clearTimeout(b._t);b._t=setTimeout(function(){b.textContent="העתקה"},1000)}function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.cssText="position:fixed;top:0;left:0;opacity:0";document.body.appendChild(a);a.select();try{document.execCommand("copy");done()}catch(e){}document.body.removeChild(a)}if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done,fb)}else{fb()}})});</script>
+</main>
+</body>
+</html>

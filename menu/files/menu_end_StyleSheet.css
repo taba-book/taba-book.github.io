@@ -1,0 +1,232 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    font-family: Assistant, Arial, sans-serif;
+    color: #1F3A44;
+    font-weight: 500;
+    background-color: #a0c49c;
+    height: 100%;
+    margin: 0;
+}
+
+.mpTable {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+}
+
+/* שורת הפוטר בתחתית הדף: התא יוצר רווח מתחתית המסך, והקופסה הצבועה היא הטבלה שבתוכו */
+.footer {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.footerBox {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.28);
+    border-radius: 8px;
+}
+
+    /* שני בוררים ולא אחד: כלל של דף בודד (למשל td או a:link) לא יגבר על הפוטר */
+    .footer .footerBox td {
+        width: 50%;
+        padding: 0 14px;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .footer .footerBox a {
+        color: #1F3A44;
+    }
+
+    .footer .footerBox .footerLeft {
+        text-align: left;
+    }
+
+.main {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+
+    .main h3 {
+        text-align: center;
+    }
+
+/* הודעה למשתמש, משותפת לכל הדפים */
+.messageBox {
+    text-align: right;
+    padding: 10px 14px;
+    border: 0;
+    border-right: 5px solid #1F3A44;
+    background-color: #FFFFFF;
+    width: fit-content;
+    margin: 15px auto;
+}
+
+/* הודעת חסימה: אותה קופסה, בצבע התראה */
+.messageAlert {
+    border-right-color: #A00000;
+    color: #A00000;
+}
+
+    .messageAlert a {
+        color: #A00000;
+    }
+
+.mpClockCell {
+    width: 15%;
+    text-align: center;
+}
+
+.mpClock {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.mpLoginCell {
+    width: 15%;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.mpBannerCell {
+    width: 70%;
+    padding: 6px 0;
+    vertical-align: middle;
+}
+
+.mpBanner {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.bannerCell {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.mpBannerImg {
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.mpBannerCenter {
+    width: 270px;
+    height: 120px;
+    padding: 0;
+    border-radius: 8px;
+    background-color: #4fae95;
+    background-image: url('../pics/bannerCenter.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ------ עיצוב התפריט האופקי ------ */
+.mpMenuBar {
+    text-align: center;
+}
+
+/* מה ששני סוגי הכפתורים חולקים */
+.mpMenuBarBtn, .mpMenuSideBtn {
+    display: inline-block;
+    background-color: #e1ebc8;
+    font-weight: bold;
+    color: #1F3A44;
+    padding: 3px 6px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+    .mpMenuBarBtn:hover, .mpMenuSideBtn:hover {
+        background-color: #c3d7b1;
+    }
+
+.mpMenuBarBtn {
+    width: 84px;
+    margin: 5px;
+}
+
+/* ------ התפריט הנפתח · נספח ה ------ */
+#nav, #nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li ul {
+    display: none;
+}
+
+#nav li:hover ul {
+    display: block;
+}
+
+/* תת-התפריט מרחף מתחת לכפתור שלו, מיושר לימין שלו */
+#nav li ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+    padding: 4px;
+    border: 1px solid #c3d7b1;
+    border-radius: 8px;
+}
+
+#nav li ul li {
+    display: block;
+}
+
+.mpMenuDropBtn {
+    display: block;
+    background-color: #e1ebc8;
+    font-weight: bold;
+    color: #1F3A44;
+    width: 120px;
+    padding: 3px 6px;
+    text-decoration: none;
+    text-align: right;
+    border-radius: 4px;
+    margin: 2px 0;
+}
+
+    .mpMenuDropBtn:hover {
+        background-color: #c3d7b1;
+    }
+
+/* ------ עיצוב התפריט האנכי לפי סוג משתמש ------ */
+.mpMenuSide {
+    display: inline-block;
+    text-align: center;
+}
+
+.mpMenuSideBtn {
+    width: 88px;
+    margin: 5px 0;
+}
+
+/* כפתורי התפריט שומרים על הצבע שלהם בכל דף, גם בדף שמגדיר צבע לקישורים */
+.mpMenuBar .mpMenuBarBtn, .mpMenuBar .mpMenuDropBtn, .mpMenuSide .mpMenuSideBtn {
+    color: #1F3A44;
+}
