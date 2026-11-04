@@ -17,7 +17,8 @@ public partial class MasterPage : System.Web.UI.MasterPage
         loginMsg += Session["userFName"].ToString();
         loginMsg += "</span><br/>";
 
-        menuBar = "<div class='mpMenuBar'>";  // --- תפריט אופקי ---
+        // --- תפריט אופקי ---
+        menuBar = "<div class='mpMenuBar'>";
         menuBar += "<a href='Default.aspx' class='mpMenuBarBtn'>דף הבית</a>";
         menuBar += "<a href='Animals.aspx' class='mpMenuBarBtn'>בעלי חיים</a>";
 

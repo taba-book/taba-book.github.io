@@ -39,7 +39,8 @@ public partial class _Default : System.Web.UI.Page
             st += "<p><a href='Logout.aspx'>יציאה</a></p>";
 
         if (Session["uName"].ToString() != "אורח" && Session["admin"].ToString() == "no")
-            st += "<p><a href=\"#\" onclick=\"confirmDelete(); return false;\">מחיקת החשבון שלי</a></p>";
+            st += "<p><a href=\"#\" onclick=\"confirmDelete(); return false;\">" +
+                "מחיקת החשבון שלי</a></p>";
         st += $"<p>ביקרו באתר עד כה {visits} גולשים.</p>";
         st += $"<p>מחוברים כרגע: {online}.</p>";
     }

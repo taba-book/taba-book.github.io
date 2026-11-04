@@ -19,7 +19,8 @@
         <table>
             <tr>
                 <td>שם משתמש:</td>
-                <td><input type="text" name="uName" value="<%= uName %>" disabled="disabled" /></td>
+                <td><input type="text" name="uName" value="<%= uName %>"
+                    disabled="disabled" /></td>
             </tr>
             <tr>
                 <td>שם פרטי:</td>

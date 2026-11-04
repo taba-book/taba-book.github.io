@@ -43,7 +43,8 @@ public partial class Manage : System.Web.UI.Page
                 string fName = table.Rows[i]["fName"].ToString();
 
                 st += $"<tr><td>{uName}</td><td>{fName}</td>";
-                st += $"<td><a href=\"#\" onclick=\"confirmDeleteAdmin('{uName}'); return false;\">מחיקה</a></td></tr>";
+                st += $"<td><a href=\"#\" onclick=\"confirmDeleteAdmin('{uName}');" +
+                    $" return false;\">מחיקה</a></td></tr>";
             }
 
             st += "</table>";

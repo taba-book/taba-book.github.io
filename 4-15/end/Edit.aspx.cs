@@ -10,7 +10,8 @@ public partial class Edit : System.Web.UI.Page
 {
     public string msg = "";
     public string sqlSelect = "", sqlUpdate = "";
-    public string uName = "", fName = "", lName = "", eMail = "", gender = "", city = "", pass = "";
+    public string uName = "", fName = "", lName = "", eMail = "", gender = "", city = "",
+        pass = "";
     public string maleChecked = "", femaleChecked = "";
     public string cityOptions = "";
 
