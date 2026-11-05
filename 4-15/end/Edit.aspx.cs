@@ -18,7 +18,7 @@ public partial class Edit : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //--- שלב 1: רק חבר מחובר יכול לעדכן ---
-        if (Session["uName"].ToString() == "אורח")
+        if (Session["uName"].ToString() == "אורח" || Session["admin"].ToString() == "yes")
         {
             Session["homeMsg"] = "הדף שביקשתם פתוח לחברים רשומים בלבד, ולכן הופניתם לדף הבית.";
             Response.Redirect("Default.aspx");

@@ -33,7 +33,7 @@ public partial class _Default : System.Web.UI.Page
         else
             st += $"<h2>שלום {Session["userFName"]}</h2>";
 
-        if (Session["uName"].ToString() == "אורח" && Session["admin"].ToString() == "no")
+        if (Session["uName"].ToString() == "אורח")
             st += "<p><a href='Login.aspx'>כניסה</a></p>";
         else
             st += "<p><a href='Logout.aspx'>יציאה</a></p>";
