@@ -63,30 +63,27 @@ main.home{max-width:1800px;height:100vh;padding:clamp(8px,1.6vh,18px) clamp(16px
 .home .brand{margin:0;font-size:clamp(13px,1.9vh,17px);font-weight:700;color:var(--accent)}
 .home h1{font-size:clamp(20px,3.6vh,32px);font-weight:800;letter-spacing:0}
 .home .lead{margin:0;font-size:clamp(12px,1.8vh,16px);font-weight:500;color:var(--muted);max-width:none;min-width:0}
-.cols{flex:1;min-height:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:clamp(18px,2.2vw,40px);align-content:start}
-.sec{margin:0 0 clamp(6px,1.6vh,18px)}
+.cols{flex:1;min-height:0;column-count:4;column-fill:auto;column-gap:clamp(18px,2.2vw,40px)}
+.sec{margin:0 0 clamp(6px,1.4vh,16px)}
+.home .part{break-after:avoid}
+.home ul.chapters li{break-inside:avoid}
 .home .part{margin:0 0 2px;padding:clamp(1px,.3vh,4px) 8px;background:#E3ECED;border-radius:4px;border-inline-start:4px solid var(--accent);font-size:clamp(13px,2.2vh,21px);font-weight:800;color:var(--ink)}
 .home .part .pn{color:var(--accent);font-weight:800}
 .home ul.chapters{border-top:0}
 .home ul.chapters li{border-bottom:1px solid var(--line)}
-.home ul.chapters a{gap:8px;padding:clamp(1px,.4vh,6px) 4px;border-radius:4px;align-items:baseline}
-.home ul.chapters .n{min-width:3.4em;font-size:clamp(12px,2.1vh,20px);font-weight:800;color:var(--accent)}
-.home ul.chapters .t{font-size:clamp(13px,2.15vh,21px);font-weight:600;color:var(--ink);line-height:1.25}
+.home ul.chapters a{gap:8px;padding:clamp(1px,.28vh,4px) 4px;border-radius:4px;align-items:baseline}
+.home ul.chapters .n{min-width:3.4em;font-size:clamp(10px,1.7vh,17px);font-weight:800;color:var(--accent)}
+.home ul.chapters .t{font-size:clamp(11px,1.85vh,19px);font-weight:600;color:var(--ink);line-height:1.25}
 .home ul.chapters .go{display:none}
-.enrich{flex:none;display:flex;align-items:center;gap:clamp(12px,2vw,36px);margin:clamp(2px,.8vh,10px) 0 0;padding-top:clamp(3px,.8vh,10px);border-top:1px solid var(--line)}
-.enrich .part{margin:0;white-space:nowrap}
-.enrich ul.chapters{display:flex;gap:clamp(12px,2.2vw,40px);flex:1}
-.enrich ul.chapters li{border-bottom:0}
 .home ul.chapters a:hover,.home ul.chapters a:focus-visible{background:#DCE7E8}
-@media (max-width:1000px){.cols{grid-template-columns:repeat(2,minmax(0,1fr))}main.home{height:auto;overflow:visible}}
-@media (max-width:760px){main.home{height:auto;overflow:visible}.cols{display:block}.home ul.chapters a{padding:9px 4px}.home ul.chapters .t{font-size:16px}.home ul.chapters .n{font-size:15px}}
+@media (max-width:1000px),(max-height:540px){main.home{height:auto;overflow:visible}.cols{column-count:2;column-fill:balance}}
+@media (max-width:760px){main.home{height:auto;overflow:visible}.cols{column-count:1}.home ul.chapters a{padding:9px 4px}.home ul.chapters .t{font-size:16px}.home ul.chapters .n{font-size:15px}}
 </style>
 </head>
 <body>
 <main class="home">
 <header><p class="brand">ספר תב״א</p><h1>חומרי עזר להורדה</h1><p class="lead">בחרו את הפרק או התחנה שאתם לומדים: בכל אחד תמצאו את הקבצים שהספר מבקש להוריד בו.</p></header>
 <div class="cols">
-<div class="col">
 <section class="sec"><h2 class="part"><span class="pn">חלק 1</span>יסודות HTML ועיצוב CSS</h2>
 <ul class="chapters">
 <li><a href="1-5/index.html"><span class="n">1.5</span><span class="t">שילוב תמונות בדף</span><span class="go" aria-hidden="true">‹</span></a></li>
@@ -111,8 +108,6 @@ main.home{max-width:1800px;height:100vh;padding:clamp(8px,1.6vh,18px) clamp(16px
 <li><a href="2-8/index.html"><span class="n">2.8</span><span class="t">שעון מערכת</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="2-9/index.html"><span class="n">2.9</span><span class="t">פרויקט מסכם: ספר היום</span><span class="go" aria-hidden="true">‹</span></a></li>
 </ul></section>
-</div>
-<div class="col">
 <section class="sec"><h2 class="part"><span class="pn">חלק 3</span>טופס הרשמה ובדיקות תקינות</h2>
 <ul class="chapters">
 <li><a href="3-1/index.html"><span class="n">3.1</span><span class="t">מהו טופס, ומה נדרש מהטופס באתר</span><span class="go" aria-hidden="true">‹</span></a></li>
@@ -126,8 +121,6 @@ main.home{max-width:1800px;height:100vh;padding:clamp(8px,1.6vh,18px) clamp(16px
 <li><a href="3-9/index.html"><span class="n">3.9</span><span class="t">בדיקות תקינות מתקדמות: דואר אלקטרוני וסיסמה</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="3-10/index.html"><span class="n">3.10</span><span class="t">קבלת פרטי הטופס בצד השרת</span><span class="go" aria-hidden="true">‹</span></a></li>
 </ul></section>
-</div>
-<div class="col">
 <section class="sec"><h2 class="part"><span class="pn">חלק 4</span>צד שרת: ASP.NET ומסד נתונים</h2>
 <ul class="chapters">
 <li><a href="4-1/index.html"><span class="n">4.1</span><span class="t">קובץ העזר Helper</span><span class="go" aria-hidden="true">‹</span></a></li>
@@ -151,8 +144,6 @@ main.home{max-width:1800px;height:100vh;padding:clamp(8px,1.6vh,18px) clamp(16px
 <li><a href="5-3/index.html"><span class="n">5.3</span><span class="t">תיבת הודעה</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="5-4/index.html"><span class="n">5.4</span><span class="t">פרטים קטנים, הבדל גדול</span><span class="go" aria-hidden="true">‹</span></a></li>
 </ul></section>
-</div>
-<div class="col">
 <section class="sec"><h2 class="part"><span class="pn">התחנות</span>הפרויקט המתגלגל</h2>
 <ul class="chapters">
 <li><a href="station-0/index.html"><span class="n">תחנה 0</span><span class="t">האתר שלכם</span><span class="go" aria-hidden="true">‹</span></a></li>
@@ -175,13 +166,13 @@ main.home{max-width:1800px;height:100vh;padding:clamp(8px,1.6vh,18px) clamp(16px
 <li><a href="station-17/index.html"><span class="n">תחנה 17</span><span class="t">מלבישים את האתר</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="station-18/index.html"><span class="n">תחנה 18</span><span class="t">תיק הפרויקט, וההגשה</span><span class="go" aria-hidden="true">‹</span></a></li>
 </ul></section>
-</div>
-</div>
-<section class="enrich" aria-label="העשרה"><h2 class="part"><span class="pn">העשרה</span></h2><ul class="chapters">
+<section class="sec"><h2 class="part"><span class="pn">העשרה</span></h2>
+<ul class="chapters">
 <li><a href="menu/index.html"><span class="n">6.6.1</span><span class="t">תפריט נפתח</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="survey/index.html"><span class="n">6.6.2</span><span class="t">דף סקר עם גרף</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="bullseye/index.html"><span class="n">6.6.3</span><span class="t">דף משחק: בול פגיעה</span><span class="go" aria-hidden="true">‹</span></a></li>
 </ul></section>
+</div>
 </main>
 </body>
 </html>
