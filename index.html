@@ -73,6 +73,10 @@ main.home{max-width:1800px;height:100vh;padding:clamp(8px,1.6vh,18px) clamp(16px
 .home ul.chapters .n{min-width:3.4em;font-size:clamp(12px,2.1vh,20px);font-weight:800;color:var(--accent)}
 .home ul.chapters .t{font-size:clamp(13px,2.15vh,21px);font-weight:600;color:var(--ink);line-height:1.25}
 .home ul.chapters .go{display:none}
+.enrich{flex:none;display:flex;align-items:center;gap:clamp(12px,2vw,36px);margin:clamp(2px,.8vh,10px) 0 0;padding-top:clamp(3px,.8vh,10px);border-top:1px solid var(--line)}
+.enrich .part{margin:0;white-space:nowrap}
+.enrich ul.chapters{display:flex;gap:clamp(12px,2.2vw,40px);flex:1}
+.enrich ul.chapters li{border-bottom:0}
 .home ul.chapters a:hover,.home ul.chapters a:focus-visible{background:#DCE7E8}
 @media (max-width:1000px){.cols{grid-template-columns:repeat(2,minmax(0,1fr))}main.home{height:auto;overflow:visible}}
 @media (max-width:760px){main.home{height:auto;overflow:visible}.cols{display:block}.home ul.chapters a{padding:9px 4px}.home ul.chapters .t{font-size:16px}.home ul.chapters .n{font-size:15px}}
@@ -121,12 +125,6 @@ main.home{max-width:1800px;height:100vh;padding:clamp(8px,1.6vh,18px) clamp(16px
 <li><a href="3-8/index.html"><span class="n">3.8</span><span class="t">שדה סיסמה</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="3-9/index.html"><span class="n">3.9</span><span class="t">בדיקות תקינות מתקדמות: דואר אלקטרוני וסיסמה</span><span class="go" aria-hidden="true">‹</span></a></li>
 <li><a href="3-10/index.html"><span class="n">3.10</span><span class="t">קבלת פרטי הטופס בצד השרת</span><span class="go" aria-hidden="true">‹</span></a></li>
-</ul></section>
-<section class="sec"><h2 class="part"><span class="pn">העשרה</span></h2>
-<ul class="chapters">
-<li><a href="menu/index.html"><span class="n">6.6.1</span><span class="t">תפריט נפתח</span><span class="go" aria-hidden="true">‹</span></a></li>
-<li><a href="survey/index.html"><span class="n">6.6.2</span><span class="t">דף סקר עם גרף</span><span class="go" aria-hidden="true">‹</span></a></li>
-<li><a href="bullseye/index.html"><span class="n">6.6.3</span><span class="t">דף משחק: בול פגיעה</span><span class="go" aria-hidden="true">‹</span></a></li>
 </ul></section>
 </div>
 <div class="col">
@@ -179,6 +177,11 @@ main.home{max-width:1800px;height:100vh;padding:clamp(8px,1.6vh,18px) clamp(16px
 </ul></section>
 </div>
 </div>
+<section class="enrich" aria-label="העשרה"><h2 class="part"><span class="pn">העשרה</span></h2><ul class="chapters">
+<li><a href="menu/index.html"><span class="n">6.6.1</span><span class="t">תפריט נפתח</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="survey/index.html"><span class="n">6.6.2</span><span class="t">דף סקר עם גרף</span><span class="go" aria-hidden="true">‹</span></a></li>
+<li><a href="bullseye/index.html"><span class="n">6.6.3</span><span class="t">דף משחק: בול פגיעה</span><span class="go" aria-hidden="true">‹</span></a></li>
+</ul></section>
 </main>
 </body>
 </html>
