@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MasterPage.master"
-    CodeFile="hanukiya.aspx.cs" Inherits="hanukiya" %>
+    CodeFile="Hanukiya.aspx.cs" Inherits="Hanukiya" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <script>

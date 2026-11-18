@@ -15,7 +15,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
         loginMsg = "<div class='mpMenuSide'>";
         loginMsg += "<span style='font-weight: 600; font-size: 18px;'>שלום ";
         loginMsg += Session["userFName"].ToString();
-        loginMsg += "</span><br/>";
+        loginMsg += "</span><br />";
 
         //--- תפריט אופקי: רשימה מקוננת ---
         menuBar = "<div class='mpMenuBar'><ul id='nav'>";

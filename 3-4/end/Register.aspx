@@ -40,6 +40,8 @@
                 document.getElementById("mAnswer").style.visibility = "visible";
                 return false;
             }
+            else
+                document.getElementById("mAnswer").style.visibility = "hidden";
 
             return true;
         }

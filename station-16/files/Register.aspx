@@ -116,16 +116,16 @@
                 msg = 'חייבת להיות נקודה אחרי סימן ה-@';
             else if (dotSign == atSign + 1)
                 msg = 'הנקודה לא יכולה להופיע מיד אחרי סימן ה-@';
-            else if (dotSign == size - 1)
+            else if (email[size - 1] == '.')
                 msg = 'הנקודה לא יכולה להיות התו האחרון של הכתובת';
 
             //----- בדיקת הסימן גרש או גרשיים -----
             else if (email.indexOf('"') != -1 || email.indexOf("'") != -1)
                 msg = 'כתובת דוא"ל לא יכולה להכיל גרש או גרשיים';
 
-            //----- בדיקת הסימן לוכסן -----
+            //----- בדיקת הסימן לוכסן הפוך -----
             else if (email.indexOf("\\") != -1)
-                msg = 'כתובת דוא"ל לא יכולה להכיל לוכסן';
+                msg = 'כתובת דוא"ל לא יכולה להכיל לוכסן הפוך';
 
             //----- האם הכתובת מכילה אות בעברית -----
             else if (isHebrew(email))
@@ -270,34 +270,34 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>טופס רישום</h1>
+    <h1>טופס הרשמה</h1>
     <form method="post" runat="server" onsubmit="return checkForm();">
         <table class="registerTable">
             <tr>
                 <td class="label">שם משתמש:</td>
                 <td>
-                    <input class="field" type="text" id="uName" name="uName" />
+                    <input class="field" type="text" id="uName" name="uName" maxlength="15" />
                     <span id="mUName" class="errMsg"></span>
                 </td>
             </tr>
             <tr>
                 <td class="label">שם פרטי:</td>
                 <td>
-                    <input class="field" type="text" id="fName" name="fName" />
+                    <input class="field" type="text" id="fName" name="fName" maxlength="10" />
                     <span id="mFName" class="errMsg"></span>
                 </td>
             </tr>
             <tr>
                 <td class="label">שם משפחה:</td>
                 <td>
-                    <input class="field" type="text" id="lName" name="lName" />
+                    <input class="field" type="text" id="lName" name="lName" maxlength="10" />
                     <span id="mLName" class="errMsg"></span>
                 </td>
             </tr>
             <tr>
                 <td class="label">כתובת דוא"ל:</td>
                 <td>
-                    <input class="field" type="text" id="email" name="email" />
+                    <input class="field" type="text" id="email" name="email" maxlength="30" />
                     <span id="mEmail" class="errMsg"></span>
                 </td>
             </tr>

@@ -4,20 +4,30 @@
 
     void Application_Start(object sender, EventArgs e)
     {
-        // Code that runs on application startup
-
-        Application["visits"] = 0;   // מונה ביקורים באתר: כמה כניסות היו
-        Application["online"] = 0;   // כמה גולשים נמצאים באתר כרגע
-       
+        Application["visits"] = 0;
+        Application["online"] = 0;
     }
+
+    void Application_End(object sender, EventArgs e)
+    {
+        //  Code that runs on application shutdown
+
+    }
+
+    void Application_Error(object sender, EventArgs e)
+    {
+        // Code that runs when an unhandled error occurs
+
+    }
+
     void Session_Start(object sender, EventArgs e)
     {
         Session["uName"] = "אורח";
         Session["userFName"] = "אורח";
         Session["admin"] = "no";
         Session["homeMsg"] = "";
+        Session["adminMsg"] = "";
 
-        // --- ספירת כניסות וגולשים ---
         Application.Lock();
 
         int visits = (int)Application["visits"];

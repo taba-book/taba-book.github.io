@@ -26,11 +26,11 @@ public partial class DeleteUser : System.Web.UI.Page
         }
         else
         {
-            //--- אישור אחרי מחיקה (מגיע מ-DeleteRecord) ---
-            if (Session["adminMsg"] != null)
+            //--- DeleteRecord: אישור אחרי מחיקה ---
+            if (Session["adminMsg"].ToString() != "")
             {
                 doneMsg = "<div class='messageBox'>" + Session["adminMsg"] + "</div>";
-                Session["adminMsg"] = null;
+                Session["adminMsg"] = "";
             }
 
             string fileName = "usersDB.mdf";
@@ -50,8 +50,8 @@ public partial class DeleteUser : System.Web.UI.Page
                 st += "<th style='text-align: center; width: 140px;'>דוא\"ל</th>";
                 st += "<th style='text-align: center;'>שנת לידה</th>";
                 st += "<th style='text-align: center;'>מגדר</th>";
-                st += "<th style='text-align: center; width: 130px;'>טלפון</th>";
-                st += "<th style='text-align: center; width: 130px;'>יישוב</th>";
+                st += "<th style='text-align: center; width: 100px;'>טלפון</th>";
+                st += "<th style='text-align: center; width: 100px;'>יישוב</th>";
                 st += "<th style='text-align: center;'>מחשבים</th>";
                 st += "<th style='text-align: center;'>מוזיקה</th>";
                 st += "<th style='text-align: center;'>טלוויזיה</th>";
@@ -69,8 +69,8 @@ public partial class DeleteUser : System.Web.UI.Page
                     st += $"<td style='width: 60px; text-align: left;'>{table.Rows[i]["email"]}</td>";
                     st += $"<td style='text-align: center;'>{table.Rows[i]["yearBorn"]}</td>";
                     st += $"<td style='text-align: center; width: 80px;'>{table.Rows[i]["gender"]}</td>";
-                    st += $"<td style='text-align: center; width: 130px;'>{table.Rows[i]["prefix"]}-{table.Rows[i]["phone"]}</td>";
-                    st += $"<td style='width: 130px;'>{table.Rows[i]["city"]}</td>";
+                    st += $"<td style='text-align: center; width: 100px;'>{table.Rows[i]["prefix"]}-{table.Rows[i]["phone"]}</td>";
+                    st += $"<td style='width: 100px;'>{table.Rows[i]["city"]}</td>";
                     st += $"<td style='text-align: center;'>{table.Rows[i]["hob1"]}</td>";
                     st += $"<td style='text-align: center;'>{table.Rows[i]["hob2"]}</td>";
                     st += $"<td style='text-align: center;'>{table.Rows[i]["hob3"]}</td>";

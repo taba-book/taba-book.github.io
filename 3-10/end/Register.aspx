@@ -76,6 +76,8 @@
                 document.getElementById("mHobby").style.visibility = "visible";
                 return false;
             }
+            else
+                document.getElementById("mHobby").style.visibility = "hidden";
 
             let password = document.getElementById("pw").value;
             let passwordV = document.getElementById("pwVerify").value;
@@ -137,16 +139,16 @@
                 msg = 'חייבת להיות נקודה אחרי סימן ה-@';
             else if (dotSign == atSign + 1)
                 msg = 'הנקודה לא יכולה להופיע מיד אחרי סימן ה-@';
-            else if (dotSign == size - 1)
+            else if (email[size - 1] == '.')
                 msg = 'הנקודה לא יכולה להיות התו האחרון של הכתובת';
 
             //----- גרש או גרשיים -----
             else if (email.indexOf('"') != -1 || email.indexOf("'") != -1)
                 msg = 'כתובת דוא"ל לא יכולה להכיל גרש או גרשיים';
 
-            //----- לוכסן -----
+            //----- לוכסן הפוך -----
             else if (email.indexOf("\\") != -1)
-                msg = 'כתובת דוא"ל לא יכולה להכיל לוכסן';
+                msg = 'כתובת דוא"ל לא יכולה להכיל לוכסן הפוך';
 
             //----- אות בעברית -----
             else if (isHebrew(email))
@@ -171,13 +173,15 @@
         }
 
         function containsBadChars(email) {
-            let badChars = "$%^&*()-![]{}<>?/ ";
-            let len = badChars.length;
-            let ch;
-            for (let i = 0; i < len; i++) {
+            const badChars = "$%^&*()-![]{}<>?/ ";
+            const len = badChars.length;
+            let i = 0, pos, ch;
+            while (i < len) {
                 ch = badChars[i];
-                if (email.indexOf(ch) != -1)
+                pos = email.indexOf(ch);
+                if (pos != -1)
                     return true;
+                i++;
             }
             return false;
         }

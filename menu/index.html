@@ -112,7 +112,8 @@ figure.shot img{display:block;width:100%;height:auto;border:1px solid var(--line
 <h2>שלב 1 · התפריט הופך לרשימה</h2>
 <p>היום התפריט העליון הוא שורה של קישורים בתוך <code>div</code>. כדי שלפריט אחד תהיה רשימה שנפתחת ממנו, צריך קודם להפוך את כל התפריט לרשימה: כל קישור בתוך <code>&lt;li&gt;</code>, וכל ה-<code>&lt;li&gt;</code> בתוך <code>&lt;ul&gt;</code> אחד.</p>
 <p><strong>בקובץ <code>MasterPage.Master.cs</code>, בתוך <code>Page_Load</code>.</strong> היום (בסוף תחנה 18) התחלת התפריט נראית כך:</p>
-<div class="code"><div class="bar"><span class="lab">לפני</span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>menuBar = "&lt;div class='mpMenuBar'&gt;";  // --- תפריט אופקי ---
+<div class="code"><div class="bar"><span class="lab">לפני</span><button type="button" class="copy" aria-live="polite">העתקה</button></div><pre dir="ltr"><code>// --- תפריט אופקי ---
+menuBar = "&lt;div class='mpMenuBar'&gt;";
 menuBar += "&lt;a href='Default.aspx' class='mpMenuBarBtn'&gt;דף הבית&lt;/a&gt;";
 menuBar += "&lt;a href='Animals.aspx' class='mpMenuBarBtn'&gt;בעלי חיים&lt;/a&gt;";</code></pre></div>
 <p><strong>אחרי:</strong> נותנים ל-<code>&lt;ul&gt;</code> את השם <code>nav</code> (בעזרת <code>id</code>), כדי שכללי ה-CSS יפנו רק אליו ולא לכל רשימה באתר. כל קישור נכנס ל-<code>&lt;li&gt;</code>.</p>

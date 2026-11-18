@@ -12,7 +12,7 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["uName"] == null)
+        if (Session["uName"].ToString() == "אורח")
         {
             st = "<h2>שלום אורח</h2>";
             st += "<p>כדי להיכנס למועדון עליכם להתחבר.</p>";

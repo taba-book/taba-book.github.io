@@ -9,26 +9,21 @@ using System.Web.UI.WebControls;
 public partial class Manage : System.Web.UI.Page
 {
     public string st = "";
-    public string denyMsg = "";
 
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["admin"].ToString() == "no")
         {
-            denyMsg = "<div class='messageBox messageAlert'>";
-            denyMsg += "אינכם מנהלים, אין לכם הרשאה להיכנס לדף ניהול";
-            denyMsg += "</div>";
-            st = denyMsg;
+            st = "<div class='messageBox messageAlert'>אינכם מנהלים, אין לכם הרשאה להיכנס לדף ניהול</div>";
         }
         else
         {
             st = "<h2>ניהול החברים</h2>";
 
-            // Manage.aspx.cs: אחרי המחיקה
-            if (Session["adminMsg"] != null)
+            if (Session["adminMsg"].ToString() != "")
             {
                 st += $"<p>{Session["adminMsg"]}</p>";
-                Session["adminMsg"] = null;
+                Session["adminMsg"] = "";
             }
 
             DataTable table = Helper.ExecuteDataTable("practiceDB.mdf",

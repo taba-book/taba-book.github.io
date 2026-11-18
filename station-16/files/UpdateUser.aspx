@@ -97,16 +97,16 @@
                 msg = 'חייבת להיות נקודה אחרי סימן ה-@';
             else if (dotSign == atSign + 1)
                 msg = 'הנקודה לא יכולה להופיע מיד אחרי סימן ה-@';
-            else if (dotSign == size - 1)
+            else if (email[size - 1] == '.')
                 msg = 'הנקודה לא יכולה להיות התו האחרון של הכתובת';
 
             //----- בדיקת הסימן גרש או גרשיים -----
             else if (email.indexOf('"') != -1 || email.indexOf("'") != -1)
                 msg = 'כתובת דוא"ל לא יכולה להכיל גרש או גרשיים';
 
-            //----- בדיקת הסימן לוכסן -----
+            //----- בדיקת הסימן לוכסן הפוך -----
             else if (email.indexOf("\\") != -1)
-                msg = 'כתובת דוא"ל לא יכולה להכיל לוכסן';
+                msg = 'כתובת דוא"ל לא יכולה להכיל לוכסן הפוך';
 
             //----- האם הכתובת מכילה אות בעברית -----
             else if (isHebrew(email))
@@ -253,21 +253,21 @@
             <tr>
                 <td class="label">שם פרטי:</td>
                 <td>
-                    <input class="field" type="text" id="fName" name="fName" value="<%= fName %>" />
+                    <input class="field" type="text" id="fName" name="fName" value="<%= fName %>" maxlength="10" />
                     <span id="mFName" class="errMsg"></span>
                 </td>
             </tr>
             <tr>
                 <td class="label">שם משפחה:</td>
                 <td>
-                    <input class="field" type="text" id="lName" name="lName" value="<%= lName %>" />
+                    <input class="field" type="text" id="lName" name="lName" value="<%= lName %>" maxlength="10" />
                     <span id="mLName" class="errMsg"></span>
                 </td>
             </tr>
             <tr>
                 <td class="label">כתובת דוא"ל:</td>
                 <td>
-                    <input class="field" type="text" id="email" name="email" value="<%= email %>" />
+                    <input class="field" type="text" id="email" name="email" value="<%= email %>" maxlength="30" />
                     <span id="mEmail" class="errMsg"></span>
                 </td>
             </tr>

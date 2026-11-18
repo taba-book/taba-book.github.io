@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MasterPage.master"
-    CodeFile="bookOfDay.aspx.cs" Inherits="bookOfDay" %>
+    CodeFile="BookOfDay.aspx.cs" Inherits="BookOfDay" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>

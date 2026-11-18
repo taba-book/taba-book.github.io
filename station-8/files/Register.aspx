@@ -34,31 +34,31 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>טופס רישום</h1>
+    <h1>טופס הרשמה</h1>
     <form method="post" runat="server">
         <table class="registerTable">
             <tr>
                 <td class="label">שם משתמש:</td>
                 <td>
-                    <input class="field" type="text" id="uName" name="uName" />
+                    <input class="field" type="text" id="uName" name="uName" maxlength="15" />
                 </td>
             </tr>
             <tr>
                 <td class="label">שם פרטי:</td>
                 <td>
-                    <input class="field" type="text" id="fName" name="fName" />
+                    <input class="field" type="text" id="fName" name="fName" maxlength="10" />
                 </td>
             </tr>
             <tr>
                 <td class="label">שם משפחה:</td>
                 <td>
-                    <input class="field" type="text" id="lName" name="lName" />
+                    <input class="field" type="text" id="lName" name="lName" maxlength="10" />
                 </td>
             </tr>
             <tr>
                 <td class="label">כתובת דוא"ל:</td>
                 <td>
-                    <input class="field" type="text" id="email" name="email" />
+                    <input class="field" type="text" id="email" name="email" maxlength="30" />
                 </td>
             </tr>
             <tr>

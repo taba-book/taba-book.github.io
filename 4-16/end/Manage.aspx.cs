@@ -18,10 +18,10 @@ public partial class Manage : System.Web.UI.Page
         {
             st = "<h2>ניהול החברים</h2>";
 
-            if (Session["adminMsg"] != null)
+            if (Session["adminMsg"].ToString() != "")
             {
                 st += $"<p>{Session["adminMsg"]}</p>";
-                Session["adminMsg"] = null;
+                Session["adminMsg"] = "";
             }
 
             DataTable table = Helper.ExecuteDataTable("practiceDB.mdf",

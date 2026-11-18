@@ -63,6 +63,8 @@ body {
 .mpBanner {
     margin: 0 auto;
     border-collapse: collapse;
+    table-layout: fixed;
+    width: 770px;
 }
 
 .bannerCell {

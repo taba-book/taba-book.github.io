@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MasterPage.master"
-    CodeFile="balloon.aspx.cs" Inherits="balloon" %>
+    CodeFile="Balloon.aspx.cs" Inherits="Balloon" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>

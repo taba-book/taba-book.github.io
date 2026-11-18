@@ -9,11 +9,11 @@ using System.Web.UI.WebControls;
 public partial class Count : System.Web.UI.Page
 {
     public string st = "";
+    int count = 0;
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        int count = 0;
         count++;
-        st = $"<h2>ביקרתם בדף {count} פעמים</h2>";
+        st = $"<h2>מספר הכניסות לדף: {count}</h2>";
     }
 }

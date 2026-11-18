@@ -55,6 +55,8 @@
                 document.getElementById("mHobby").style.visibility = "visible";
                 return false;
             }
+            else
+                document.getElementById("mHobby").style.visibility = "hidden";
 
             return true;
         }

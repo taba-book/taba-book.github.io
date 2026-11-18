@@ -8,11 +8,7 @@
         .homePage {
             max-width: 900px;
             margin: 30px auto;
-            line-height: 1.8;
-        }
-        .homeSectionTitle {
-            border-bottom: 2px solid #c9d8b6;
-            padding-bottom: 5px;
+            line-height: 1.6;
         }
     </style>
     <script>

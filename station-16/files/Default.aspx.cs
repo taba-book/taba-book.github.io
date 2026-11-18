@@ -20,7 +20,7 @@ public partial class _Default : System.Web.UI.Page
                 homeMsg += "<a href='Login.aspx'>התחברות</a> · <a href='Register.aspx'>הרשמה</a>";
             }
             homeMsg += "</div>";
-            Session["homeMsg"] = "";  // איפוס, אחרת ההודעה תופיע בכל דף מכאן והלאה
+            Session["homeMsg"] = "";  // איפוס, אחרת ההודעה תופיע בכל כניסה לדף הבית
         }
 
         //--- הודעה לגולש שמחק את החשבון שלו (מגיעה בכתובת, כי ה-Session נמחק) ---

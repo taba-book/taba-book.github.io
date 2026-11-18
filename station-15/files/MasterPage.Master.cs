@@ -15,15 +15,12 @@ public partial class MasterPage : System.Web.UI.MasterPage
         loginMsg = "<div class='mpMenuSide'>";
         loginMsg += "<span style='font-weight: 600; font-size: 18px;'>שלום ";
         loginMsg += Session["userFName"].ToString();
-        loginMsg += "</span><br/>";
+        loginMsg += "</span><br />";
 
         // --- תפריט אופקי ---
         menuBar = "<div class='mpMenuBar'>";
         menuBar += "<a href='Default.aspx' class='mpMenuBarBtn'>דף הבית</a>";
         menuBar += "<a href='Animals.aspx' class='mpMenuBarBtn'>בעלי חיים</a>";
-
-        //--- הברכה והתפריט, לפי מי שמחובר ---
-
         //משתמש לא מחובר
         if (Session["uName"].ToString() == "אורח")
         {

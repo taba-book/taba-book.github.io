@@ -7,7 +7,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <title>ניהול החברים</title>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700"
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;700"
           rel="stylesheet" />
     <link href="css/StyleSheet.css" rel="stylesheet" />
     <style>

@@ -25,7 +25,6 @@ body {
     width: 100%;
 }
 
-/* שורת הפוטר בתחתית הדף: התא יוצר רווח מתחתית המסך, והקופסה הצבועה היא הטבלה שבתוכו */
 .footer {
     width: 100%;
     padding-bottom: 10px;
@@ -38,7 +37,7 @@ body {
     border-radius: 8px;
 }
 
-    /* שני בוררים ולא אחד: כלל של דף בודד (למשל td או a:link) לא יגבר על הפוטר */
+    /* שתי מחלקות בבורר ולא אחת: כלל של דף בודד (למשל td או a:link) לא יגבר על הפוטר */
     .footer .footerBox td {
         width: 50%;
         padding: 0 14px;
@@ -111,6 +110,8 @@ body {
 .mpBanner {
     margin: 0 auto;
     border-collapse: collapse;
+    table-layout: fixed;
+    width: 770px;
 }
 
 .bannerCell {

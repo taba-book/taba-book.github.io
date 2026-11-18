@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MasterPage.master"
-    CodeFile="spinner.aspx.cs" Inherits="spinner" %>
+    CodeFile="Spinner.aspx.cs" Inherits="Spinner" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

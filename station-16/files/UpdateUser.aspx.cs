@@ -33,7 +33,6 @@ public partial class UpdateUser : System.Web.UI.Page
         sqlSelect = $"SELECT * FROM {tableName} WHERE uName = '{uName}'";
         DataTable table = Helper.ExecuteDataTable(fileName, sqlSelect);
 
-        //--- בדיקה האם שם המשתמש קיים במערכת ---
         int length = table.Rows.Count;
         if (length == 0)
             msg = "אינכם משתמשים רשומים במערכת";
@@ -56,8 +55,6 @@ public partial class UpdateUser : System.Web.UI.Page
             pw = table.Rows[0]["pw"].ToString();
         }
 
-        //--- שלב 4: הגולש לחץ "עדכון" ---
-        //--- אחזור הפרטים המעודכנים מהטופס ---
         if (IsPostBack)
         {
             fName = Request.Form["fName"].Trim();
@@ -75,7 +72,6 @@ public partial class UpdateUser : System.Web.UI.Page
             }
             pw = pw.Trim();
 
-            //--- טיפול בתחביבים ---
             string hobby;
 
             if (Request.Form["hobby"] == null)
@@ -93,7 +89,6 @@ public partial class UpdateUser : System.Web.UI.Page
             hob4 = "F";
             hob5 = "F";
 
-            //--- 5 - 1 בדיקה האם מחרוזת התחביבים מכילה את הערכים ---
             if (hobby.Contains('1')) hob1 = "T";
             if (hobby.Contains('2')) hob2 = "T";
             if (hobby.Contains('3')) hob3 = "T";
@@ -110,7 +105,6 @@ public partial class UpdateUser : System.Web.UI.Page
             }
             else
             {
-                //--- בניית שאילתת העדכון ---
                 sqlUpdate = $"UPDATE {tableName} ";
                 sqlUpdate += $"SET fName = N'{fName}', ";
                 sqlUpdate += $"lName = N'{lName}', ";
@@ -136,7 +130,6 @@ public partial class UpdateUser : System.Web.UI.Page
             }
         }
 
-        //--- שלב 3: מכינים את הטופס, מהערכים שבמשתנים ---
         if (gender == "זכר")
             maleChecked = "checked";
         else if (gender == "נקבה")
@@ -174,9 +167,11 @@ public partial class UpdateUser : System.Web.UI.Page
         for (int y = from; y <= to; y++)
         {
             if (y == yearBorn)
-                yearOptions += $"<option value='{y}' selected>{y}</option>";
+                yearOptions +=
+                    $"<option value='{y}' selected>{y}</option>";
             else
-                yearOptions += $"<option value='{y}'>{y}</option>";
+                yearOptions +=
+                    $"<option value='{y}'>{y}</option>";
         }
     }
 }

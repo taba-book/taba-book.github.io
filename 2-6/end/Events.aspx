@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MasterPage.master"
-    CodeFile="events.aspx.cs" Inherits="events" %>
+    CodeFile="Events.aspx.cs" Inherits="Events" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <script>

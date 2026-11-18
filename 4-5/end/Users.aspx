@@ -7,7 +7,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <title>מועדון הקוראים</title>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700"
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;700"
           rel="stylesheet" />
     <style> body { font-family: Assistant, Arial, sans-serif; } </style>
 </head>

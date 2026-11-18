@@ -22,9 +22,9 @@ public partial class ManagerPage : System.Web.UI.Page
         {
             msg += "<div class='managerMenuBar'>";
             msg += "<a href='ShowTable.aspx' class='managerMenuBarBtn'>הצגת טבלה</a>";
-            msg += "<a href='DeleteUser.aspx' class='managerMenuBarBtn'>מחיקת משתמש</a><br />";
             msg += "<a href='SimpleQuery.aspx' class='managerMenuBarBtn'>שאילתה פשוטה</a>";
             msg += "<a href='ComplexQuery.aspx' class='managerMenuBarBtn'>שאילתה מורכבת</a>";
+            msg += "<a href='DeleteUser.aspx' class='managerMenuBarBtn'>מחיקת משתמש</a>";
             msg += "</div>";
         }
     }

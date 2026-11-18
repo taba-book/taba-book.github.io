@@ -14,10 +14,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
         loginMsg = "<div class='mpMenuSide'>";
         loginMsg += "<span style='font-weight: 600; font-size: 18px;'>שלום ";
         loginMsg += Session["userFName"].ToString();
-        loginMsg += "</span><br/>";
-
-        //--- הברכה והתפריט, לפי מי שמחובר ---
-
+        loginMsg += "</span><br />";
         //משתמש לא מחובר
         if (Session["uName"].ToString() == "אורח")
         {

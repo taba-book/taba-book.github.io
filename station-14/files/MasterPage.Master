@@ -5,14 +5,14 @@
 <html lang="he" dir="rtl">
 <head runat="server">
     <meta charset="utf-8" />
-    <title>בעלי החיים שלי</title>
+    <title>אתר בעלי החיים שלי</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700"
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;700"
           rel="stylesheet" />
     <link href="css/StyleSheet.css" rel="stylesheet" />
 
     <!-- ----------- head place holder ---------- -->
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <!-- ---------------------------------------- -->
 </head>
@@ -46,7 +46,6 @@
                 </table>
             </td>
         </tr>
-        <!-- ------------------------------------------------------- -->
 
 
 
@@ -61,18 +60,16 @@
                 </div>
             </td>
         </tr>
-        <!-- ------------------------------------------------------- -->
 
 
 
         <tr>
             <!-- ------------------ התוכן הראשי של הדף ----------------- -->
             <td class="main">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </td>
         </tr>
-        <!-- ------------------------------------------------------- -->
 
 
 

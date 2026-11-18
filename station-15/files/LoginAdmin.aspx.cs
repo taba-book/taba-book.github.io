@@ -20,7 +20,7 @@ public partial class LoginAdmin : System.Web.UI.Page
             string fileName = "usersDB.mdf";
             string tableName = "managerTbl";
 
-            sqlManager = $"SELECT * FROM {tableName} WHERE (mName = '{mName}' AND pw = '{mPw}')";
+            sqlManager = $"SELECT * FROM {tableName} WHERE (mName = N'{mName}' AND pw = N'{mPw}')";
 
             DataTable table = Helper.ExecuteDataTable(fileName, sqlManager);
 

@@ -60,7 +60,7 @@ table.list tr:hover {
     border-radius: 8px;
 }
 
-/* שני בוררים ולא אחד: כלל של דף בודד (למשל td או a:link) לא יגבר על הפוטר */
+/* שתי מחלקות בבורר ולא אחת: כלל של דף בודד (למשל td או a:link) לא יגבר על הפוטר */
 .footer .footerBox td {
     width: 50%;
     padding: 0 14px;

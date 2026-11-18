@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MasterPage.master"
-    CodeFile="clock.aspx.cs" Inherits="clock" %>
+    CodeFile="Clock.aspx.cs" Inherits="Clock" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>

@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <style>
-        /* ------ עיצוב התפריט של דף מנהל - לא הברכה אלא שבמרכז המסך ------ */
         .managerMenuBar {
             text-align: center;
         }
